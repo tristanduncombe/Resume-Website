@@ -4,7 +4,8 @@
   user-select: none;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -16,7 +17,7 @@ body {
 body::-webkit-scrollbar {
   width: 1em;
 }
- 
+
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
@@ -99,6 +100,14 @@ a:hover {
   color: rgb(255, 148, 148);
 }
 
+.main_image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: 5px solid rgb(82, 82, 82);
+}
+
 .main_name {
   color: white;
   font-size: 75px;
@@ -112,7 +121,7 @@ a:hover {
 .main_job {
   margin-top: 30px;
   color: white;
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -202,21 +211,20 @@ a:hover {
   padding-inline: 32%;
 }
 
-.details{
+.details {
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-.bar{
+.bar {
   position: relative;
 
   border: 2px solid rgb(160, 124, 160);
 
   border-radius: 20px;
-
 }
-.bar div{
+.bar div {
   position: relative;
   width: 0;
   height: 9px;
@@ -224,39 +232,38 @@ a:hover {
   background-color: rgb(160, 124, 160);
 }
 
-#swe-skill-bar{
+#swe-skill-bar {
   animation: swe-skill-bar 2s forwards;
 }
-@keyframes swe-skill-bar{
-  100%{
-      width: 75%;
+@keyframes swe-skill-bar {
+  100% {
+    width: 75%;
   }
 }
-#react-skill-bar{
+#react-skill-bar {
   animation: react-skill-bar 2s forwards;
 }
-@keyframes react-skill-bar{
-  100%{
-      width: 60%
+@keyframes react-skill-bar {
+  100% {
+    width: 60%;
   }
 }
-#js-bar{
+#js-bar {
   animation: js-fill 2s forwards;
 }
 @keyframes js-fill {
-  100%{
-      width: 72%;
+  100% {
+    width: 72%;
   }
 }
-#c-bar{
+#c-bar {
   animation: c-fill 2s forwards;
 }
-@keyframes c-fill{
-  100%{
-      width: 50%;
+@keyframes c-fill {
+  100% {
+    width: 50%;
   }
-} 
-
+}
 
 /* Container for flexboxes */
 section {
