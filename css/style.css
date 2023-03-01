@@ -1,3 +1,10 @@
+/* Colour Pallette*/
+:root {
+  --primary: white;
+  --secondary: rgb(82, 82, 82);
+  --accent: rgb(160, 124, 160);
+}
+
 * {
   box-sizing: border-box;
   font: Helvetica;
@@ -54,7 +61,7 @@ body::-webkit-scrollbar {
 /* Style the header */
 header {
   font-family: Helvetica;
-  background-color: rgb(160, 124, 160);
+  background-color: var(--accent);
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -102,8 +109,8 @@ a:hover {
 }
 
 .connect_close {
-  margin-left: 20%;
-  margin-top: -0.7%;
+  padding-left: 30%;
+  margin-top: -1.1%;
   font-size: large;
 }
 
@@ -117,7 +124,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  border: 5px solid rgb(82, 82, 82);
+  border: 5px solid var(--secondary);
 }
 
 .main_name {
@@ -126,7 +133,7 @@ a:hover {
   font-family: Helvetica;
   font-weight: bold;
   text-align: center;
-  text-shadow: 5px 5px rgb(82, 82, 82);
+  text-shadow: 5px 5px var(--secondary);
   margin-top: 15%;
 }
 
@@ -150,7 +157,7 @@ a:hover {
 .linked_in:hover {
   margin-top: 0.1%;
   text-align: center;
-  color: rgb(82, 82, 82);
+  color: var(--secondary);
 }
 
 .email {
@@ -161,7 +168,7 @@ a:hover {
 .email:hover {
   margin-top: 0.1%;
   text-align: center;
-  color: rgb(82, 82, 82);
+  color: var(--secondary);
 }
 
 .github {
@@ -172,11 +179,11 @@ a:hover {
 .github:hover {
   margin-top: 0.1%;
   text-align: center;
-  color: rgb(82, 82, 82);
+  color: var(--secondary);
 }
 
 .about {
-  color: rgb(82, 82, 82);
+  color: var(--secondary);
   padding-inline: 32%;
 }
 
@@ -206,6 +213,10 @@ a:hover {
   padding-block: 20px;
 }
 
+.about_courses {
+  display: inline-block;
+}
+
 .about_volunteering {
   margin-top: 0.5%;
   font-size: 25px;
@@ -214,7 +225,7 @@ a:hover {
 
 .about_skills {
   margin-top: 0.5%;
-  color: rgb(82, 82, 82);
+  color: var(--secondary);
   font-size: 25px;
   text-align: center;
 }
@@ -232,7 +243,7 @@ a:hover {
 .bar {
   position: relative;
 
-  border: 2px solid rgb(160, 124, 160);
+  border: 2px solid var(--accent);
 
   border-radius: 20px;
 }
@@ -241,7 +252,7 @@ a:hover {
   width: 0;
   height: 9px;
   border-radius: 10px;
-  background-color: rgb(160, 124, 160);
+  background-color: var(--accent);
 }
 
 #swe-skill-bar {
@@ -309,14 +320,14 @@ article {
 /* Style the footer */
 footer {
   font-family: Helvetica;
-  background-color: rgb(82, 82, 82);
+  background-color: var(--secondary);
   padding: 10px;
   text-align: center;
   color: white;
   font-size: 15px;
 }
 .copyright {
-  background-color: rgb(82, 82, 82);
+  background-color: var(--secondary);
   padding: 10px;
   text-align: center;
   color: white;
