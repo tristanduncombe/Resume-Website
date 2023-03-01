@@ -65,17 +65,17 @@ header {
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: var(--primary);
 }
 
 a {
-  color: white;
+  color: var(--primary);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: white;
+  color: var(--primary);
   text-decoration: none;
   cursor: pointer;
   text-size-adjust: 20px;
@@ -84,7 +84,7 @@ a:hover {
 .topnav a {
   overflow: hidden;
   text-decoration: none;
-  color: white;
+  color: var(--primary);
   margin-right: 20px;
   font-size: medium;
   text-shadow: #666;
@@ -92,13 +92,13 @@ a:hover {
 }
 
 .divider {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--primary);
   height: 20px;
   margin-bottom: 20px;
 }
 
 .connect_message {
-  color: white;
+  color: var(--primary);
   font-size: 15px;
   text-align: center;
   margin-top: 2.5%;
@@ -128,7 +128,7 @@ a:hover {
 }
 
 .main_name {
-  color: white;
+  color: var(--primary);
   font-size: 75px;
   font-family: Helvetica;
   font-weight: bold;
@@ -139,7 +139,7 @@ a:hover {
 
 .main_job {
   margin-top: 30px;
-  color: white;
+  color: var(--primary);
   font-size: 25px;
   text-align: center;
 }
@@ -323,14 +323,13 @@ footer {
   background-color: var(--secondary);
   padding: 10px;
   text-align: center;
-  color: white;
+  color: var(--primary);
   font-size: 15px;
 }
 .copyright {
   background-color: var(--secondary);
   padding: 10px;
-  text-align: center;
-  color: white;
+  text-align: var(--primary);
   font-weight: bold;
   font-size: 18px;
 }
