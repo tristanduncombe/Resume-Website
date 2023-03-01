@@ -7,12 +7,11 @@
         document.getElementsByClassName("connect_message")[0].style.display = "none";
     }
 
-    const titles = ["Software Engineering Intern - Boeing Defence Australia", "Acting Group Training Officer - Australian Air League Queensland", "Federal Cadet of the Year 2019 - Australian Air League"];
+    const titles = ["Software Engineering Intern - Boeing Defence Australia", "Acting Group Training Officer - Australian Air League Queensland"];
 
     var title;
 
     function selectTitle() {
-
         const nextTitle = titles[Math.floor(Math.random() * titles.length)]
 
         if (nextTitle !== title) {
@@ -26,11 +25,15 @@
     setInterval(selectTitle(), 5000);
 </script>
 <html style="margin: 0;">
+    <head>
+        <title>Tristan Duncombe - Home</title>
+        <link rel="icon" href="./src/Profile-Image.png" type = "image/x-icon">
+    </head>
     <div class="home">
         <header style="padding-bottom: 10%;">
             <div class="topnav"> 
                 <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
+                <a href="./about.html">ABOUT</a>
                 <a href="#experience">EXPERIENCE</a>
                 <a href="#experience">PROJECTS</a>
             </div>
