@@ -137,6 +137,17 @@ a:hover {
   margin-top: 15%;
 }
 
+.header_name {
+  color: var(--primary);
+  font-size: 35px;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 5px 5px var(--secondary);
+  text-align: left;
+  margin-left: -5%;
+}
+
 .main_job {
   margin-top: 30px;
   color: var(--primary);
@@ -332,4 +343,21 @@ footer {
   text-align: var(--primary);
   font-weight: bold;
   font-size: 18px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row{
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
