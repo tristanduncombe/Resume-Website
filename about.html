@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="./css/style.css">
-<script src="https://kit.fontawesome.com/e58a4047d3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/style.css" />
+<script
+  src="https://kit.fontawesome.com/e58a4047d3.js"
+  crossorigin="anonymous"
+></script>
 
 <script>
-    function closePopup() {
-        document.getElementsByClassName("connect_message")[0].style.display = "none";
-    }
+  function closePopup() {
+    document.getElementsByClassName("connect_message")[0].style.display =
+      "none";
+  }
 </script>
-<html style="margin: 0;">
-    <div class="home">
-        <header>
-            <div class="topnav"> 
-                <a href="./index.html">HOME</a>
+<html style="margin: 0">
+  <div class="home">
+    <header>
+      <div class="topnav">
+        <a href="./index.html">HOME</a>
         <a href="./about.html">ABOUT</a>
         <a href="./experience.html">EXPERIENCE</a>
         <a href="./projects.html">PROJECTS</a>
-            </div>
-        
-            <div class="divider"></div>
-            
-            <div class="connect_message">Hi there, thanks for vising my website! I'd love to <a href="https://www.linkedin.com/in/tristan-duncombe-306263213/" class="connect_link">connect</a> with you! <div class="connect_close"onclick="closePopup()"><i class="fa-solid fa-xmark"></i></div></div> 
-        </header>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="connect_message">
+        Hi there, thanks for vising my website! I'd love to
+        <a
+          href="https://www.linkedin.com/in/tristan-duncombe-306263213/"
+          class="connect_link"
+          >connect</a
+        >
+        with you!
+        <div class="connect_close" onclick="closePopup()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </header>
+  </div>
+  <article class="about" style="margin: 0">
+    <div class="about_header">About Me</div>
+    <div class="about_paragraph">
+      <p>
+        Hi I'm Tristan, I'm a Third Year Bachelor (Honours) & Master of Software
+        Engineering Student and I am working casually as a Software Engineering
+        Intern for Boeing Defence Australia. Currently I have a significiant
+        amount of experience in front-end web-development, in
+        Vue/React/Knockout, but I want to eventually move into lower level
+        programming as I wish to work with Flight Computers and Avionics
+        eventually. I have significant experience within coorporate and formal
+        environments as well as working as a team to develop, facitilate, and
+        produce, documents, courses and training materials. Through my
+        experience I have build a significant amount of knowledge of the
+        aerospace sector and the many companies and projects within.
+      </p>
     </div>
-    <article class="about" style="margin: 0;">
-        <div class="about_header">
-            About Me
-        </div>
-        <div class="about_paragraph">
-            <p>Hi I'm Tristan, I'm a Third Year Bachelor (Honours) & Master of Software Engineering Student and I am working casually as a Software Engineering Intern for Boeing Defence Australia. 
-                Currently I have a significiant amount of experience in front-end web-development, in Vue/React/Knockout, but I want to eventually move into lower level programming as I wish to work with Flight Computers and Avionics eventually. I have significant experience within coorporate and formal environments as well as working as a team to develop, facitilate, and produce, documents, courses and training materials. Through my experience I have build a significant amount of knowledge of the aerospace sector and the many companies and projects within.</p>
-        </div>
-        <div class="about_skills">
-            Skills
-        </div>
-    </article>
-    <article class="about_experience" style="margin-bottom: 20px">
-        <div class="shape-1"></div>
-        <div class="shape-2"></div>
-            <div class="skills">
-                <div class="details">
-                    <span>Software Engineering</span>
-                    <span>75%</span>
-                </div>
-                <div class="bar">
-                    <div id="swe-skill-bar"></div>
-                </div>
+    <div class="about_skills">Skills</div>
+  </article>
+  <article class="about_experience" style="margin-bottom: 20px">
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+    <div class="skills">
+      <div class="details">
+        <span>Software Engineering</span>
+        <span>75%</span>
+      </div>
+      <div class="bar">
+        <div id="swe-skill-bar"></div>
+      </div>
 
-                <div class="details">
-                    <span>React</span>
-                    <span>60%</span>
-                </div>
-                <div class="bar">
-                    <div id="react-skill-bar"></div>
-                </div>
-                <div class="details">
-                    <span>Javascript</span>
-                    <span>72%</span>
-                </div>
-                <div class="bar">
-                    <div id="js-bar"></div>
-                </div>
-                <div class="details">
-                    <span>C</span>
-                    <span>50%</span>
-                </div>
-                <div class="bar">
-                    <div id="c-bar"></div>
-                </div>
-        </div>
-
-    </article>
-  </section>
+      <div class="details">
+        <span>React</span>
+        <span>60%</span>
+      </div>
+      <div class="bar">
+        <div id="react-skill-bar"></div>
+      </div>
+      <div class="details">
+        <span>Javascript</span>
+        <span>72%</span>
+      </div>
+      <div class="bar">
+        <div id="js-bar"></div>
+      </div>
+      <div class="details">
+        <span>C</span>
+        <span>50%</span>
+      </div>
+      <div class="bar">
+        <div id="c-bar"></div>
+      </div>
+    </div>
+  </article>
 
   <footer>
     <p class="copyright">© Copyright Tristan Duncombe 2023</p>

@@ -3,6 +3,9 @@
   --primary: white;
   --secondary: rgb(82, 82, 82);
   --accent: rgb(160, 124, 160);
+  --text-primary-color: white;
+  --text-secondary-color: rgb(82, 82, 82);
+  --text-accent-color: rgb(255, 148, 148);
 }
 
 * {
@@ -65,17 +68,15 @@ header {
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: var(--primary);
+  color: var(--text-primary-color);
 }
 
 a {
-  color: var(--primary);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: var(--primary);
   text-decoration: none;
   cursor: pointer;
   text-size-adjust: 20px;
@@ -84,7 +85,7 @@ a:hover {
 .topnav a {
   overflow: hidden;
   text-decoration: none;
-  color: var(--primary);
+  color: var(--text-primary-color);
   margin-right: 20px;
   font-size: medium;
   text-shadow: #666;
@@ -92,19 +93,24 @@ a:hover {
 }
 
 .divider {
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--text-primary-color);
   height: 20px;
   margin-bottom: 20px;
 }
 
 .connect_message {
-  color: var(--primary);
+  color: var(--text-primary-color);
   font-size: 15px;
   text-align: center;
   margin-top: 2.5%;
 }
 
+.connect_message a {
+  color: var(--text-primary-color);
+}
+
 .connect_link:hover {
+  color: var(--text-primary-color);
   text-decoration-line: underline;
 }
 
@@ -128,29 +134,29 @@ a:hover {
 }
 
 .main_name {
-  color: var(--primary);
+  color: var(--text-primary-color);
   font-size: 75px;
   font-family: Helvetica;
   font-weight: bold;
   text-align: center;
-  text-shadow: 5px 5px var(--secondary);
+  text-shadow: 5px 5px var(--text-secondary-color);
   margin-top: 15%;
 }
 
 .header_name {
-  color: var(--primary);
+  color: var(--text-primary-color);
   font-size: 35px;
   font-family: Helvetica;
   font-weight: bold;
   text-align: center;
-  text-shadow: 5px 5px var(--secondary);
+  text-shadow: 5px 5px var(--text-secondary-color);
   text-align: left;
-  margin-left: -5%;
+  cursor: default;
 }
 
 .main_job {
   margin-top: 30px;
-  color: var(--primary);
+  color: var(--text-primary-color);
   font-size: 25px;
   text-align: center;
 }
@@ -163,38 +169,41 @@ a:hover {
 .linked_in {
   margin-top: 0.1%;
   display: inline-block;
+  color: var(--text-primary-color)
 }
 
 .linked_in:hover {
   margin-top: 0.1%;
   text-align: center;
-  color: var(--secondary);
+  color: var(--text-secondary-color);
 }
 
 .email {
   margin-top: 0.1%;
   display: inline-block;
+  color: var(--text-primary-color)
 }
 
 .email:hover {
   margin-top: 0.1%;
   text-align: center;
-  color: var(--secondary);
+  color: var(--text-secondary-color);
 }
 
 .github {
   margin-top: 0.1%;
   display: inline-block;
+  color: var(--text-primary-color)
 }
 
 .github:hover {
   margin-top: 0.1%;
   text-align: center;
-  color: var(--secondary);
+  color: var(--text-secondary-color);
 }
 
 .about {
-  color: var(--secondary);
+  color: var(--text-secondary-color);
   padding-inline: 32%;
 }
 
@@ -236,7 +245,7 @@ a:hover {
 
 .about_skills {
   margin-top: 0.5%;
-  color: var(--secondary);
+  color: var(--text-secondary-color);
   font-size: 25px;
   text-align: center;
 }
@@ -334,13 +343,13 @@ footer {
   background-color: var(--secondary);
   padding: 10px;
   text-align: center;
-  color: var(--primary);
+  color: var(--text-primary-color);
   font-size: 15px;
 }
 .copyright {
   background-color: var(--secondary);
   padding: 10px;
-  text-align: var(--primary);
+  text-align: var(--text-primary-color);
   font-weight: bold;
   font-size: 18px;
 }
