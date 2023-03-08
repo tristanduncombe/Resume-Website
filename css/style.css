@@ -143,17 +143,6 @@ a:hover {
   margin-top: 15%;
 }
 
-.header_name {
-  color: var(--text-primary-color);
-  font-size: 35px;
-  font-family: Helvetica;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 5px 5px var(--text-secondary-color);
-  text-align: left;
-  cursor: default;
-}
-
 .main_job {
   margin-top: 30px;
   color: var(--text-primary-color);

@@ -1,65 +1,24 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/index.css" />
 <script
   src="https://kit.fontawesome.com/e58a4047d3.js"
   crossorigin="anonymous"
 ></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
-  function closePopup() {
-    document.getElementsByClassName("connect_message")[0].style.display =
-      "none";
-  }
-
-  const titles = [
-    "Undergraduate Software Engineer",
-    "Group Training Officer",
-    "Avionics Engineer"
-  ];
-
-  var title;
-
-  function selectTitle() {
-    const nextTitle = titles[Math.floor(Math.random() * titles.length)];
-
-    if (nextTitle !== title) {
-      title = nextTitle;
-      console.log(title);
-    } else {
-      selectTitle();
-    }
-  }
-
-  setInterval(selectTitle(), 5000);
+  $(function(){
+    $("#header").load("header.html"); 
+  });
 </script>
+ 
 <html style="margin: 0">
   <head>
-    <title>Tristan Duncombe - Home</title>
+    <title>Index - Tristan Duncombe</title>
     <link rel="icon" href="" type="image/x-icon" />
   </head>
   <div class="home">
-    <header style="padding-bottom: 10%">
-      <div class="topnav">
-        <a class="header_name"> TD</a>
-        <a href="./index.html">HOME</a>
-        <a href="./about.html">ABOUT</a>
-        <a href="./experience.html">EXPERIENCE</a>
-        <a href="./projects.html">PROJECTS</a>
-      </div>
-
-      <div class="divider"></div>
-      <div class="connect_message">
-        Hi there, thanks for vising my website! I'd love to
-        <a
-          href="https://www.linkedin.com/in/tristan-duncombe-306263213/"
-          class="connect_link"
-          >connect</a
-        >
-        with you!
-        <div class="connect_close" onclick="closePopup()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-      </div>
+    <header style="padding-bottom: 10%;">
+      <div id="header"></div>
 
       <div class="main_image">
         <img src="./images/Profile-Image.png" width="15%" />
@@ -68,9 +27,7 @@
       <div class="main_name" style="margin-top: 5%">Tristan Duncombe</div>
 
       <div class="main_job">
-        <script type="text/javascript">
-          document.write(title);
-        </script>
+        Undergraduate Software Engineer
       </div>
 
       <div class="contact">
