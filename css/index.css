@@ -10,7 +10,7 @@
 
 * {
   box-sizing: border-box;
-  font: Helvetica;
+  font-family: "Quicksand", sans-serif;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -33,10 +33,6 @@ body {
   height: 100%;
 }
 
-body {
-  font-family: Helvetica;
-}
-
 body::-webkit-scrollbar {
   width: 1em;
 }
@@ -44,7 +40,6 @@ body::-webkit-scrollbar {
 /* Custom Scrollbar */
 /* Style the header */
 header {
-  font-family: Helvetica;
   background-color: var(--accent);
   padding: 30px;
   text-align: center;
@@ -96,7 +91,7 @@ a:hover {
   color: rgb(255, 148, 148);
 }
 
-.main_image img{
+.main_image img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -107,11 +102,9 @@ a:hover {
 .main_name {
   color: var(--text-primary-color);
   font-size: 75px;
-  font-family: Helvetica;
-  font-weight: bold;
+  font-family: "Unbounded", cursive;
+  font-weight: 900;
   text-align: center;
-  text-shadow: 5px 5px var(--text-secondary-color);
-  margin-top: 15%;
 }
 
 .main_job {
@@ -129,7 +122,7 @@ a:hover {
 .linked_in {
   margin-top: 0.1%;
   display: inline-block;
-  color: var(--text-primary-color)
+  color: var(--text-primary-color);
 }
 
 .linked_in:hover {
@@ -141,7 +134,7 @@ a:hover {
 .email {
   margin-top: 0.1%;
   display: inline-block;
-  color: var(--text-primary-color)
+  color: var(--text-primary-color);
 }
 
 .email:hover {
@@ -153,7 +146,7 @@ a:hover {
 .github {
   margin-top: 0.1%;
   display: inline-block;
-  color: var(--text-primary-color)
+  color: var(--text-primary-color);
 }
 
 .github:hover {
@@ -163,8 +156,10 @@ a:hover {
 }
 
 .about {
-  color: var(--text-secondary-color);
-  padding-inline: 32%;
+  margin: auto;
+  text-align: left;
+  font-size: 25px;
+  width: 58%;
 }
 
 .about_header {
@@ -275,7 +270,6 @@ section {
 }
 
 footer {
-  font-family: Helvetica;
   background-color: var(--secondary);
   padding: 10px;
   text-align: center;
