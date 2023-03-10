@@ -101,7 +101,7 @@ a:hover {
 
 .main_name {
   color: var(--text-primary-color);
-  font-size: 75px;
+  font-size: auto;
   font-family: "Unbounded", cursive;
   font-weight: 900;
   text-align: center;
@@ -115,6 +115,7 @@ a:hover {
 }
 
 .contact i {
+  font-size: auto;
   padding-top: 30px;
   text-align: center;
 }
@@ -158,7 +159,7 @@ a:hover {
 .about {
   margin: auto;
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
   width: 58%;
 }
 
