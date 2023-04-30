@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/projects.css">
 <script src="https://kit.fontawesome.com/e58a4047d3.js" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
   $(function(){
     $("#header").load("header.html"); 
+  });
+  $(function(){
+    $("#footer").load("footer.html"); 
   });
 </script>
 
@@ -15,13 +18,28 @@
         <h3 style="text-align: center;">Projects</h3>
 
         <div>Contained within this page are the public projects I have worked on and published. These projects can be seen on my <a href="https://www.github.com/TristanDuncombe">github</a></div>
-
+        <div class="row">
+          <div class="column">
+            <div class="card" onclick="location.href='https://github.com/tristanduncombe/DECO1400-Project';">
+              <div class="container">
+                <h4><b>Resume Webiste</b></h4>
+                <p>HTML/CSS/JS Resume Website.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="card" onclick="location.href='https://github.com/tristanduncombe/Calendario';">
+              <div class="container">
+                <h4><b>Calendario</b></h4>
+                <p>Vue/Axios/MySQL application which allows a user to customise a calendar or webpage where they can display anything they like (unless the content is sanitized).</p>
+              </div>
+            </div>
+          </div>
+      </div>
     </article>
+    
   </section>
 
-  <footer>
-    <p class="copyright">© Copyright Tristan Duncombe 2023</p>
-    <p>Designed, Programmed, and Deployed by Tristan Duncombe</p>
-    <p>Last Updated: 01/03/2023</p>
-  </footer>
+  <div id="footer"></div>
 </html>

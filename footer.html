@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="./css/index.css" />
+<!DOCTYPE html> 
 <script
   src="https://kit.fontawesome.com/e58a4047d3.js"
   crossorigin="anonymous"
@@ -13,23 +12,34 @@
   href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
   rel="stylesheet"
 />
-<script>
-  $(function () {
-    $("#header").load("header.html");
-  });
-</script>
 
-<html style="margin: 0">
-  <footer style="padding-top: auto">
-    <div style="display: flex; flex-flow: column wrap; flex: 1">
-      <div>
-        <p class="copyright">
-          © 2023 Tristan Duncombe • Written in HTML/CSS & JS
-        </p>
-      </div>
-      <div>
-        <p>Designed, Programmed, and Deployed by Tristan Duncombe</p>
-      </div>
-    </div>
-  </footer>
-</html>
+<footer>
+  <div class="footer-container">
+    <p>© 2023 Tristan Duncombe • <a href="https://github.com/TristanDuncombe" class="githubLink">Github</a> • <a href="https://www.linkedin.com/in/jane-doe/">LinkedIn</a> • <a href="mailto:tduncombe747@gmail.com">Email</a></p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    color: white;
+    padding: 20px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .footer-container li {
+    margin: 0 10px;
+  }
+  .footer-container a {
+    color: white;
+    text-decoration: none;
+  }
+</style>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/experience.css">
 <script src="https://kit.fontawesome.com/e58a4047d3.js" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -7,10 +7,19 @@
   $(function(){
     $("#header").load("header.html"); 
   });
+  $(function(){
+    $("#footer").load("footer.html"); 
+  });
 </script>
 <html style="margin: 0;">
     <div id="header"></div>
-    <article class="about" style="margin: 0;">        
+    <article class="about" style="margin: 0;">   
+        <div class="about_education">
+            Experience
+        </div>
+        <div class="about_paragraph" style="margin-top: 10%; margin-bottom: 10%">
+            I am pursuing a Bachelor (Honours) and a Master of Software Engineering at UQ. During my studies, I participate in various societies, such as UQ Computing Society and UQ Space, where I gain valuable skills and knowledge in cloud computing, computer systems, programming languages, and software engineering principles. I also volunteer as a group training officer for Queensland Group and as an avionics engineer for UQSPACE, where I develop my leadership and teamwork abilities. Furthermore, I have relevant work experience as a software engineering intern and an undergraduate software engineer at Boeing Defence Australia, where I apply my theoretical knowledge to real-world projects and learn from industry experts. Through these experiences, I demonstrate my passion, creativity, and competence in software engineering and I am eager to pursue new challenges and opportunities in this field.
+        </div>     
         <div class="about_education">
             Education
         </div>
@@ -93,9 +102,5 @@
     </article>
   </section>
 
-  <footer>
-    <p class="copyright">© Copyright Tristan Duncombe 2023</p>
-    <p>Designed, Programmed, and Deployed by Tristan Duncombe</p>
-    <p>Last Updated: 01/03/2023</p>
-  </footer>
+  <div id="footer"></div>
 </html>
