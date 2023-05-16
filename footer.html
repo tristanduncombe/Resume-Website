@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <script
   src="https://kit.fontawesome.com/e58a4047d3.js"
   crossorigin="anonymous"
@@ -15,32 +15,115 @@
 
 <footer>
   <div class="footer-container">
-    <p>© 2023 Tristan Duncombe • <a href="https://github.com/TristanDuncombe" class="githubLink">Github</a> • <a href="https://www.linkedin.com/in/jane-doe/">LinkedIn</a> • <a href="mailto:tduncombe747@gmail.com">Email</a></p>
+    <div class="row">
+      <div class="column">
+        <div class="spotify-container">
+          <i class="fa-brands fa-spotify"></i>
+          <div class="text">
+            <div>On Repeat</div>
+            <a
+              href="https://open.spotify.com/track/6i40XRqEwHAnSxwZWasMRp?si=6db2bb7d855249fe"
+              class="spotify-link"
+              >For Elise</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="column" style="font-size: 1.5vmin">
+        <div class="links">©2023 Tristan Duncombe</div>
+        <div class="links">
+          <a href="https://github.com/TristanDuncombe" class="githubLink">
+            <i class="fab fa-github"></i>
+          </a>
+          •
+          <a href="https://www.linkedin.com/in/tristan-duncombe-306263213/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          •
+          <a href="mailto:tduncombe747@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
 <style>
-  footer {
-    color: white;
-    padding: 20px;
-  }
   .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2vw;
+    font-size: 1vw;
   }
   .footer-container ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-  }
-  .footer-container li {
-    margin: 0 10px;
   }
   .footer-container a {
     color: white;
     text-decoration: none;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .column {
+    width: 50%;
+    padding-left: 10px;
+  }
+
+  .spotify-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .fa-spotify {
+    font-size: 4vmin;
+    margin-right: 10px;
+  }
+
+  .spotify-link {
+    font-weight: 100;
+    font-size: 1.5vmin;
+  }
+
+  .spotify-link a:hover {
+    color: rgb(160, 124, 160);
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .text div {
+    margin: 0;
+    font-size: 1.5vmin;
+  }
+
+  .links {
+    white-space: nowrap;
+  }
+
+  .links a {
+    font-size: 2vmin;
+  }
+
+  .links a:hover {
+    color: rgb(160, 124, 160);
   }
 </style>

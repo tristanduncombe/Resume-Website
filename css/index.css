@@ -279,7 +279,7 @@ a:hover {
   }
 }
 
-/* Container for flexboxes */
+
 section {
   display: -webkit-flex;
   display: flex;
@@ -290,12 +290,4 @@ footer {
   padding: 10px;
   text-align: center;
   color: var(--text-primary-color);
-  font-size: 15px;
-}
-.copyright {
-  background-color: var(--secondary);
-  padding: 10px;
-  text-align: var(--text-primary-color);
-  font-weight: bold;
-  font-size: 18px;
 }

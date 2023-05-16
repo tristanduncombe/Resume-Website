@@ -53,13 +53,13 @@
   
   .connect_message {
     color: var(--text-primary-color);
-    font-size: 40%
-    text-align: center;
-    margin-top: 2.5%;
+    font-size: 1.5vmin;   
   }
   
   .connect_message a {
     color: var(--text-primary-color);
+    margin-block: 0;
+    padding-block: 0;
   }
   
   .connect_link:hover {
@@ -68,9 +68,7 @@
   }
   
   .connect_close {
-    padding-left: 32vw;
-    margin-top: -1.25vw;
-    font-size: 100%
+    font-size: 1.5vmin
   }
   
   .connect_close:hover {
@@ -78,10 +76,19 @@
     color: rgb(255, 148, 148);
   }
 
+  @media (max-width: 600px) {
+    .connect_close {
+      margin-left: 25vw;
+    }
+
+    .connect_close {
+      margin-top: -2vw
+    }
+   }
+
   header {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--accent);
-    padding: 2vw;
     text-align: center;
     font-size: 2vw;
     color: var(--text-primary-color);
