@@ -1,0 +1,17 @@
+/* Colour Pallette*/
+:root {
+  --primary: white;
+  --secondary: rgb(82, 82, 82);
+  --accent: rgb(160, 124, 160);
+  --text-primary-color: white;
+  --text-secondary-color: rgb(82, 82, 82);
+  --text-accent-color: rgb(255, 148, 148);
+}
+
+header {
+  background-color: var(--accent);
+  padding: 1vmax;
+  text-align: center;
+  font-size: 1.5vmax;
+  color: var(--text-primary-color);
+}

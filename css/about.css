@@ -1,20 +1,15 @@
 
 
 /* Colour Pallette*/
-:root {
-    --primary: white;
-    --secondary: rgb(82, 82, 82);
-    --accent: rgb(160, 124, 160);
-    --text-primary-color: white;
-    --text-secondary-color: rgb(82, 82, 82);
-    --text-accent-color: rgb(255, 148, 148);
-  }
+
+@import url(./generic.css);
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 25px;
     cursor: pointer;
+    height: 15vmin;
   }
   
   .card:hover {
@@ -43,18 +38,6 @@
     margin: 0;
     padding: 0;
   }
-  
-  body {
-    font-family: Helvetica;
-  }
-  
-  header {
-    background-color: var(--accent);
-    padding: 1vmax;
-    text-align: center;
-    font-size: 1.5vmax;
-    color: var(--text-primary-color);
-  }
 
   a {
     text-decoration: none;
@@ -76,65 +59,6 @@
     text-shadow: #666;
     text-align: center;
   }
-  
-  .divider {
-    border-bottom: 1px solid var(--text-primary-color);
-    height: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .connect_message {
-    color: var(--text-primary-color);
-    font-size: 15px;
-    text-align: center;
-    margin-top: 2.5%;
-  }
-  
-  .connect_message a {
-    color: var(--text-primary-color);
-  }
-  
-  .connect_link:hover {
-    color: var(--text-primary-color);
-    text-decoration-line: underline;
-  }
-  
-  .connect_close {
-    padding-left: 30%;
-    margin-top: -1.1%;
-    font-size: large;
-  }
-  
-  .connect_close:hover {
-    cursor: pointer;
-    color: rgb(255, 148, 148);
-  }
-  
-  .main_image img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    border: 5px solid var(--secondary);
-  }
-  
-  .main_name {
-    color: var(--text-primary-color);
-    font-size: 75px;
-    font-family: Helvetica;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 5px 5px var(--text-secondary-color);
-    margin-top: 15%;
-  }
-  
-  .main_job {
-    margin-top: 30px;
-    color: var(--text-primary-color);
-    font-size: 25px;
-    text-align: center;
-  }
-  
   .contact i {
     padding-top: 30px;
     text-align: center;
@@ -178,7 +102,6 @@
   
   .about {
     color: var(--text-secondary-color);
-    padding-inline: 32%;
   }
   
   .about_header {
@@ -189,32 +112,27 @@
   }
   
   .about_paragraph {
-    margin-top: 0.5%;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vmin;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .about_education {
-    margin-top: 0.5%;
-    font-size: 25px;
+
+  .about_achievements {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     text-align: center;
+
   }
-  
-  .about_degree {
-    margin-top: 0.2%;
-    padding-block: 20px;
-  }
-  
-  .about_courses {
-    display: inline-block;
-  }
-  
-  .about_volunteering {
-    margin-top: 0.5%;
-    font-size: 25px;
-    text-align: center;
+
+  .about_experience {
+    width: 100vmin;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .about_skills {
@@ -224,16 +142,12 @@
     text-align: center;
   }
   
-  .about_experience {
-    padding-inline: 32%;
-  }
-  
   .details {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
   }
+
   .bar {
     position: relative;
   
@@ -241,6 +155,7 @@
   
     border-radius: 20px;
   }
+
   .bar div {
     position: relative;
     width: 0;
@@ -288,29 +203,6 @@
     display: flex;
   }
   
-  /* Style the navigation menu */
-  nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: #ccc;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
   /* Style the footer */
   footer {
     font-family: Helvetica;
@@ -346,5 +238,6 @@
   }
 
   body ::selection {
-    background-color: var(--accent)
+    background-color: var(--accent);
+    color: white;
   }
