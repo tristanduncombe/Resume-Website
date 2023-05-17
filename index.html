@@ -30,24 +30,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ea05245640.js" crossorigin="anonymous"></script>
   </head>
+  <header>
+    <div id="header"></div>
+  </header>
   <body>
-    <div class="home">
-      <header>
-        <div id="header"></div>
-        <div
+
+    <div id="body">
+      <div
           style="
-            min-width: 70%;
+            width: 100vmin;
             display: flex;
             flex-direction: column;
-            margin: auto;
-            margin-top: 5%;
+            margin: auto; 
+            margin-bottom: 5vmin;
           "
         >
           <div
             style="
               flex: 1;
               align-self: flex-start;
-              margin-left: 20%;
               font-size: 2vw;
             "
           >
@@ -62,7 +63,6 @@
             style="
               flex-wrap: wrap;
               align-self: flex-end;
-              margin-right: 20%;
               margin-top: -0.5%;
               font-size: 2vw;
             "
@@ -74,7 +74,7 @@
             style="
               font-size: 1.25vw;
               margin-top: 50px;
-              max-width: 60%;
+              width: 60vmin;
               margin-left: auto;
               margin-right: auto;
             "
@@ -86,7 +86,7 @@
             style="
               background-color: white;
               border-radius: 25px;
-              width: 60%;
+              width: 100vmin;
               margin-left: auto;
               margin-right: auto;
               margin-top: 2%;
@@ -95,17 +95,17 @@
             <div
               class="message"
               style="
-                font-size: 1.5vw;
+                font-size: 1.25vw;
                 text-align: left;
                 color: rgb(82, 82, 82);
                 margin-left: 5%;
               "
             >
-              <div style="font-weight:400; font-size: 1.5vw; margin-top: 1rem">Latest Update:</div>
+              <div style="font-weight:400; font-size: 1.25vw; margin-top: 1rem">Latest Update:</div>
               <div>
   
               </div>
-              <div class="latestUpdate" style="font-size: 1.5vw">
+              <div class="latestUpdate" onclick="window.location.href='/updates.html';" style="font-size: 1.25vw; cursor: pointer;">
                 Why I am learning to fly as a Software Engineer.
               </div>
             </div>
@@ -130,8 +130,10 @@
             </a>
           </div>
         </div>
-      </header>
+
     </div>
-    <div id="footer"></div>
   </body>
+  <footer>
+    <div id="footer"></div>
+  </footer>
 </html>

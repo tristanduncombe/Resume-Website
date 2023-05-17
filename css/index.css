@@ -47,6 +47,15 @@ header {
   color: var(--text-primary-color);
 }
 
+
+#body {
+  background-color: var(--accent);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: var(--text-primary-color);
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
