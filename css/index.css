@@ -33,26 +33,22 @@ body {
   height: 100%;
 }
 
-body::-webkit-scrollbar {
-  width: 1em;
-}
-
 /* Custom Scrollbar */
 /* Style the header */
 header {
   background-color: var(--accent);
-  padding: 30px;
+  padding: 1vmax;
   text-align: center;
-  font-size: 35px;
+  font-size: 1.5vmax;
   color: var(--text-primary-color);
 }
 
 
 #body {
   background-color: var(--accent);
-  padding: 30px;
+  padding: 1vmax;
   text-align: center;
-  font-size: 35px;
+  font-size: 1vmin;
   color: var(--text-primary-color);
 }
 
