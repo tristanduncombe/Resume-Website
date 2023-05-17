@@ -78,11 +78,9 @@
 
   @media (max-width: 600px) {
     .connect_close {
-      margin-left: 25vw;
-    }
-
-    .connect_close {
-      margin-top: -2vw
+      margin-left: 20vmin;
+      margin-top: -2vmin
+      margin
     }
    }
 
