@@ -11,11 +11,6 @@
 * {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
 
 * img {
@@ -31,6 +26,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  
+}
+
+body ::selection {
+  /* Change highlight background color to black */
+  background: var(--secondary);
 }
 
 /* Custom Scrollbar */
@@ -295,4 +296,9 @@ footer {
   padding: 10px;
   text-align: center;
   color: var(--text-primary-color);
+}
+
+footer ::selection {
+  /* Change highlight background color to black */
+  background: var(--accent);
 }
