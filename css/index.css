@@ -302,3 +302,20 @@ footer ::selection {
   /* Change highlight background color to black */
   background: var(--accent);
 }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}

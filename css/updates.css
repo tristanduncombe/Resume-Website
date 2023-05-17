@@ -15,7 +15,6 @@
     transition: 0.3s;
     border-radius: 25px;
     cursor: pointer;
-    height: 15vmin;
   }
   
   .card:hover {
@@ -368,6 +367,5 @@
   }
 
   body ::selection {
-    background-color: var(--accent);
-    color: white;
+    background-color: var(--accent)
   }
