@@ -10,12 +10,6 @@
 
 * {
   box-sizing: border-box;
-  font: Helvetica;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
 
 * img {
@@ -32,38 +26,8 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: Helvetica;
-}
-
-body::-webkit-scrollbar {
-  width: 1em;
-}
-
-/* Custom Scrollbar */
-
-::-webkit-scrollbar {
-  width: 5%;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(255, 148, 148);
-}
-
 /* Style the header */
 header {
-  font-family: Helvetica;
   background-color: var(--accent);
   padding: 30px;
   text-align: center;
@@ -136,7 +100,6 @@ a:hover {
 .main_name {
   color: var(--text-primary-color);
   font-size: 75px;
-  font-family: Helvetica;
   font-weight: bold;
   text-align: center;
   text-shadow: 5px 5px var(--text-secondary-color);
@@ -328,7 +291,6 @@ article {
 
 /* Style the footer */
 footer {
-  font-family: Helvetica;
   background-color: var(--secondary);
   padding: 10px;
   text-align: center;

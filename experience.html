@@ -11,9 +11,11 @@
     $("#footer").load("footer.html"); 
   });
 </script>
-<html style="margin: 0;">
+<header>
     <div id="header"></div>
-    <article class="about" style="margin: 0;">   
+</header>
+<body>
+    <div class="experience">
         <div class="about_education">
             Experience
         </div>
@@ -24,7 +26,7 @@
             Education
         </div>
         <div class="about_degree">
-            <img src="./images/UQ-Icon.png" width="30%"></img>
+            <img src="./images/UQ-Icon.png" width="15%"></img>
             <div>
                 <div style="font-size: 1.25vw; margin-top: 10px;">Bachelor (Honours) and Master of Software Engineering</div>
                 <div style="font-size: 1vw; margin-top: 10px;">Societies: UQ Computing Society, UQ Space</div>
@@ -62,13 +64,13 @@
             <div class="column">
                 <img src="./images/Boeing-Logo.png" width="50%"></img>
                 <div>
-                    <div style="font-size: 20px; margin-top: 10px;">Software Engineering Intern</div>
+                    <div style="font-size: 1vw; margin-top: 10px;">Software Engineering Intern</div>
                     <div style="font-size: 15px; margin-top: 10px;">Boeing Defence Australia</div>
                     <div style="margin-top: 10px;">2022 - 2023</div>
                 </div>
             </div>
     
-            <div class="column">
+            <div class="column" style="float: right;">
                 <img src="./images/Boeing-Logo.png" width="50%"></img>
                 <div>
                     <div style="font-size: 20px; margin-top: 10px;">Undergraduate Software Engineer</div>
@@ -77,8 +79,8 @@
                 </div>
             </div>
         </div>
-    </article>
-  </section>
-
-  <div id="footer"></div>
-</html>
+    </div>
+</body>
+<footer>
+    <div id="footer"></div>
+</footer>

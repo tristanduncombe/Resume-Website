@@ -133,10 +133,11 @@
     width: 100vmin;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2vw;
   }
   
   .about_skills {
-    margin-top: 0.5%;
+    margin-top: 1vw;
     color: var(--text-secondary-color);
     font-size: 25px;
     text-align: center;
@@ -205,7 +206,6 @@
   
   /* Style the footer */
   footer {
-    font-family: Helvetica;
     background-color: var(--secondary);
     padding: 10px;
     text-align: center;

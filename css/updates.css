@@ -43,11 +43,7 @@
     margin: 0;
     padding: 0;
   }
-  
-  body {
-    font-family: Helvetica;
-  }
-  
+
   header {
     background-color: var(--accent);
     padding: 1vmax;
@@ -121,7 +117,6 @@
   .main_name {
     color: var(--text-primary-color);
     font-size: 75px;
-    font-family: Helvetica;
     font-weight: bold;
     text-align: center;
     text-shadow: 5px 5px var(--text-secondary-color);
@@ -313,7 +308,6 @@
   
   /* Style the footer */
   footer {
-    font-family: Helvetica;
     background-color: var(--secondary);
     padding: 10px;
     text-align: center;
