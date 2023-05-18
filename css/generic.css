@@ -38,3 +38,7 @@ header {
     padding-bottom: 20px;
     padding-top: 20px;
   }
+
+  .main_body {
+    font-size: 1vw;
+  }
