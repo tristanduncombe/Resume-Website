@@ -1,4 +1,4 @@
-@import './generic.css';
+@import "./generic.css";
 
 * img {
   -webkit-user-drag: none;
@@ -12,7 +12,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body ::selection {
@@ -27,15 +26,6 @@ header {
   padding: 1vmax;
   text-align: center;
   font-size: 1.5vmax;
-  color: var(--text-primary-color);
-}
-
-
-#body {
-  background-color: var(--accent);
-  padding: 1vmax;
-  text-align: center;
-  font-size: 1vmin;
   color: var(--text-primary-color);
 }
 
@@ -97,13 +87,7 @@ a:hover {
   font-family: "Unbounded", cursive;
   font-weight: 900;
   text-align: center;
-}
-
-.main_job {
-  margin-top: 30px;
-  color: var(--text-primary-color);
-  font-size: 25px;
-  text-align: center;
+  font-size: 2.5vmax
 }
 
 .contact i {
@@ -224,8 +208,8 @@ a:hover {
 }
 
 .latestUpdate {
-  font-size: 1.5vw; 
-  margin-bottom: 2rem; 
+  font-size: 1.5vw;
+  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
@@ -271,12 +255,6 @@ a:hover {
   }
 }
 
-
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
 footer {
   background-color: var(--secondary);
   padding: 10px;
@@ -301,7 +279,51 @@ footer ::selection {
   display: table;
 }
 
-.row{
+.row {
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+#body {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent);
+  padding: 4vw;
+  font-size: 1vmin;
+  color: var(--text-primary-color);
+  margin: auto;
+}
+
+#main_hi {
+  font-size: 1.5vmax
+}
+
+#main_job {
+  margin-top: -0.5%;
+  font-size: 1.5vmax;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main_body {
+  margin: 2vw auto;
+  width: 60vw;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  #main_body {
+    width: 90vw;
+    align-items: center;
+  }
+}
+
+footer {
+  margin-top: auto;
+}
+
+.main_contact {
+  font-size: 1.25vmax;
+  text-align: center;
 }

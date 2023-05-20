@@ -1,38 +1,24 @@
-const https = require("https");
-
-const token = "dfe4cff6ffaa42b78fe5279bf7d9d622";
-const options = {
-  hostname: "api.spotify.com",
-  path: "/v1/me/player/currently-playing",
-  method: "GET",
-  headers: {
-    Authorization: `Bearer ${token}`,
+var songs = [
+  {
+    name: "Everyone's A Guru Now",
+    link: "https://open.spotify.com/track/1S6VlDQoVgjfSeTsNfRvSd?si=64c03e917b7e4863",
   },
-};
+  {
+    name: "action --> reaction",
+    link: "https://open.spotify.com/track/3zEXS2CmWYXHBMz8exI4ia?si=1fa160c85c5242b4",
+  },
+  {
+    name: "For Elise",
+    link: "https://open.spotify.com/track/6i40XRqEwHAnSxwZWasMRp?si=2b9c93e291ee4b2f",
+  },
+  {
+    name: "Cold Cold Man",
+    link: "https://open.spotify.com/track/7AN4zvlHUTqpl25bqOhFcG?si=3db4cd811e8a4cbb",
+  },
+];
 
-const req = https.request(options, (res) => {
-  let data = "";
+function getRandomSong(songs) {
+  return songs[Math.floor(Math.random() * songs.length)];
+}
 
-  res.on("data", (chunk) => {
-    data += chunk;
-  });
-
-  res.on("end", () => {
-    const response = JSON.parse(data);
-
-    console.log(response);
-    if (response.item) {
-      const trackName = response.item.name;
-      const artistName = response.item.artists[0].name;
-      console.log(`Currently playing: ${trackName} by ${artistName}`);
-    } else {
-      console.log("No track currently playing");
-    }
-  });
-});
-
-req.on("error", (error) => {
-  console.error(error);
-});
-
-req.end();
+var randomSong = getRandomSong(songs);

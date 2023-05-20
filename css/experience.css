@@ -17,6 +17,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  color: var(--text-secondary-color)
 }
 
 /* Style the header */
@@ -39,15 +40,6 @@ a:hover {
   text-size-adjust: 20px;
 }
 
-.topnav a {
-  overflow: hidden;
-  text-decoration: none;
-  color: var(--text-primary-color);
-  margin-right: 20px;
-  font-size: medium;
-  text-shadow: #666;
-  text-align: center;
-}
 
 .divider {
   border-bottom: 1px solid var(--text-primary-color);
@@ -168,8 +160,8 @@ a:hover {
 }
 
 .about_education {
-  margin-top: 0.5%;
-  font-size: 25px;
+  margin-top: 4vh;
+  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -298,4 +290,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100vmin;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }

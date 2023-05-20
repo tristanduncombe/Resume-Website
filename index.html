@@ -23,96 +23,78 @@
   });
 </script>
 
-<html style="margin: 0">
+<html style="min-height: 100vh; display: flex; flex-direction: column">
   <head>
     <title>Index - Tristan Duncombe</title>
     <link rel="icon" href="" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ea05245640.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ea05245640.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <header>
     <div id="header"></div>
   </header>
   <body>
-
     <div id="body">
-      <div
+      <div id="main_body">
+        <div id="main_hi">Hi there! I'm</div>
+
+        <div class="main_name">Tristan Duncombe</div>
+
+        <div id="main_job">an Undergraduate Software Engineer</div>
+
+        <div
           style="
-            width: 100vmin;
-            display: flex;
-            flex-direction: column;
-            margin: auto; 
-            margin-bottom: 5vmin;
+            font-size: 1.25vmax;
+            margin-top: 50px;
+            width: 60vmin;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          I also fly aircraft, play piano, and watch Formula 1.
+        </div>
+
+        <div
+          style="
+            background-color: white;
+            border-radius: 25px;
+            padding-inline: 4vw;
+            padding-block: 1vw;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
           "
         >
           <div
-            style="
-              flex: 1;
-              align-self: flex-start;
-              font-size: 1.5vmax;
-            "
-          >
-            Hi there! I'm
-          </div>
-          <div style="flex: 1; font-size: 2.5vmax" class="main_name">
-            Tristan Duncombe
-          </div>
-  
-          <div
-            class="main_job"
-            style="
-              flex-wrap: wrap;
-              align-self: flex-end;
-              margin-top: -0.5%;
-              font-size: 1.5vmax;
-            "
-          >
-            an Undergraduate Software Engineer
-          </div>
-          <!-- <div style="font-weight: 600; padding-top: 5%">What am I about?</div> -->
-          <div
+            class="message"
             style="
               font-size: 1.25vmax;
-              margin-top: 50px;
-              width: 60vmin;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            I also fly aircraft, play piano, and watch Formula 1.
-          </div>
-  
-          <div
-            style="
-              background-color: white;
-              border-radius: 25px;
-              width: 100vmin;
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 2%;
+              text-align: left;
+              color: rgb(82, 82, 82);
             "
           >
             <div
-              class="message"
-              style="
-                font-size: 1.25vmax;
-                text-align: left;
-                color: rgb(82, 82, 82);
-                margin-left: 5%;
-              "
+              style="font-weight: 400; font-size: 1.25vmax; margin-top: 1rem"
             >
-              <div style="font-weight:400; font-size: 1.25vmax; margin-top: 1rem">Latest Update:</div>
-              <div>
-  
-              </div>
-              <div class="latestUpdate" onclick="window.location.href='/updates.html';" style="font-size: 1.25vmax; cursor: pointer;">
-                Why I am learning to fly as a Software Engineer.
-              </div>
+              Latest Update:
+            </div>
+            <div></div>
+            <div
+              class="latestUpdate"
+              onclick="window.location.href='/updates.html';"
+              style="font-size: 1.25vmax; cursor: pointer"
+            >
+              Why I am learning to fly as a Software Engineer.
             </div>
           </div>
-          <!-- <img src="./images/Profile-Image.png" width="15%" style="margin-left: auto; margin-right: auto;"/> -->
-          <div style="font-size: 1.25vmax; padding-top: 5%;">Contact me!</div>
-          <div class="contact" style="font-size: 1.25vmax; padding-bottom: 12.5%">
+        </div>
+        <!-- <img src="./images/Profile-Image.png" width="15%" style="margin-left: auto; margin-right: auto;"/> -->
+
+        <div class="main_contact">
+          <div>Contact me!</div>
+          <div class="contact">
             <a href="https://www.linkedin.com/in/tristan-duncombe-306263213/">
               <div class="linked_in">
                 <i class="fa-brands fa-linkedin"></i>
@@ -130,7 +112,7 @@
             </a>
           </div>
         </div>
-
+      </div>
     </div>
   </body>
   <footer>

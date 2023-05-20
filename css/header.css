@@ -1,17 +1,35 @@
 /* Colour Pallette*/
 .topnav a {
-    overflow: hidden;
-    text-decoration: none;
-    float: right;
-    color: var(--text-primary-color);
-    padding-left: 20px;
-    font-size: medium;
-    text-shadow: #666;
-    text-align: center;
-    font-weight: bold;
+  overflow: hidden;
+  text-decoration: none;
+  float: right;
+  color: var(--text-primary-color);
+  padding-left: 20px;
+  font-size: medium;
+  text-shadow: #666;
+  text-align: center;
+  font-weight: bold;
+}
+
+.topnav .header_name {
+  overflow: hidden;
+  text-decoration: none;
+  float: left;
+  color: var(--text-primary-color);
+  margin-left: -20px;
+  text-shadow: #666;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Unbounded", cursive;
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .topnav a {
+    visibility: hidden;
   }
-  
+
   .topnav .header_name {
+    visibility: visible;
     overflow: hidden;
     text-decoration: none;
     float: left;
@@ -20,74 +38,121 @@
     text-shadow: #666;
     text-align: center;
     font-size: 20px;
-    font-family: 'Unbounded', cursive;
+    font-family: "Unbounded", cursive;
     font-weight: bold;
   }
-  @media screen and (max-width: 500px) {
-    .topnav a {
-      visibility: hidden;
-    }
-    
-    .topnav .header_name {
-      visibility: visible;
-      overflow: hidden;
-      text-decoration: none;
-      float: left;
-      color: var(--text-primary-color);
-      margin-left: -20px;
-      text-shadow: #666;
-      text-align: center;
-      font-size: 20px;
-      font-family: 'Unbounded', cursive;
-      font-weight: bold;
-    }
+}
 
-  }
+.divider {
+  border-bottom: 1px solid var(--text-primary-color);
+  height: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-  .divider {
-    border-bottom: 1px solid var(--text-primary-color);
-    height: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
-  .connect_message {
-    color: var(--text-primary-color);
-    font-size: 1.5vmin;   
-  }
-  
-  .connect_message a {
-    color: var(--text-primary-color);
-    margin-block: 0;
-    padding-block: 0;
-  }
-  
-  .connect_link:hover {
-    color: var(--text-primary-color);
-    text-decoration-line: underline;
-  }
-  
+.connect_message {
+  color: var(--text-primary-color);
+  font-size: 1.5vmin;
+}
+
+.connect_message a {
+  color: var(--text-primary-color);
+  margin-block: 0;
+  padding-block: 0;
+}
+
+.connect_link:hover {
+  color: var(--text-primary-color);
+  text-decoration-line: underline;
+}
+
+.connect_close {
+  font-size: 1.5vmin;
+}
+
+.connect_close:hover {
+  cursor: pointer;
+  color: rgb(255, 148, 148);
+}
+
+.navbar_dropdown {
+  visibility: visible;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--accent);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: rgb(159, 95, 159);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: absolute;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  color: var(--text-second-color);
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  float: left;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+@media (max-width: 600px) {
   .connect_close {
-    font-size: 1.5vmin
-  }
-  
-  .connect_close:hover {
-    cursor: pointer;
-    color: rgb(255, 148, 148);
+    margin-left: 20vmin;
+    margin-top: -2vmin margin;
   }
 
-  @media (max-width: 600px) {
-    .connect_close {
-      margin-left: 20vmin;
-      margin-top: -2vmin
-      margin
-    }
-   }
-
-  header {
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--accent);
-    text-align: center;
-    font-size: 2vw;
-    color: var(--text-primary-color);
+  .navbar {
+    visibility: hidden;
   }
+
+  .navbar_dropdown {
+    visibility: visible;
+  }
+}
+
+header {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--accent);
+  text-align: center;
+  font-size: 2vw;
+  color: var(--text-primary-color);
+}

@@ -3,6 +3,15 @@
   src="https://kit.fontawesome.com/e58a4047d3.js"
   crossorigin="anonymous"
 ></script>
+<script src="./js/footer.js"></script>
+<script>
+  var outputElement = document.getElementById("song");
+  var linkElement = document.createElement("a");
+  linkElement.href = randomSong.link;
+  linkElement.className = "spotify-link";
+  linkElement.textContent = randomSong.name;
+  outputElement.appendChild(linkElement);
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 <!-- Fonts -->
@@ -19,13 +28,8 @@
       <div class="column">
         <div class="spotify-container">
           <i class="fa-brands fa-spotify"></i>
-          <div class="text">
-            <div>On Repeat</div>
-            <a
-              href="https://open.spotify.com/track/6i40XRqEwHAnSxwZWasMRp?si=6db2bb7d855249fe"
-              class="spotify-link"
-              >For Elise</a
-            >
+          <div class="text" id="song">
+            <div id="on_repeat">On Repeat</div>
           </div>
         </div>
       </div>
