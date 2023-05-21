@@ -10,7 +10,7 @@ body ::selection {
   transition: 0.3s;
   border-radius: 25px;
   cursor: pointer;
-  height: 17vmin;
+  height: 175px;
   padding: 0.1rem;
 }
 
@@ -23,19 +23,19 @@ body ::selection {
 }
 
 .projects_main {
-  width: 100vmin; 
-  margin-left: auto;  
-  margin-right: auto; 
+  width: 100vmin;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem;
 }
 
 .main_body {
   font-size: 1rem;
-  padding-blocK: 2rem;
+  padding-block: 2rem;
 }
 
 #projects {
-  padding-bottom: 55vmax; 
+  padding-bottom: 55vmax;
   margin-top: 2vmin;
   font-size: 1rem;
 }
