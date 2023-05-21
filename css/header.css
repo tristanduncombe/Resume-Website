@@ -64,6 +64,6 @@ header {
   font-family: "Quicksand", sans-serif;
   background-color: var(--accent);
   text-align: center;
-  font-size: 2vh;
+  font-size: 2rem;
   color: var(--text-primary-color);
 }
