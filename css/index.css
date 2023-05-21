@@ -12,7 +12,7 @@ body ::selection {
   display: flex;
   flex-direction: column;
   background-color: var(--accent);
-  padding: 4vw;
+  padding: 4vh;
   font-size: 1vmin;
   color: var(--text-primary-color);
   margin: auto;
@@ -93,23 +93,23 @@ a:hover {
 }
 
 #main_body {
-  margin: 2vw auto;
-  width: 60vw;
+  margin: 2vh auto;
+  width: 60vh;
   align-items: center;
 }
 
 #main_update {
   background-color: white;
   border-radius: 25px;
-  padding-inline: 4vw;
-  padding-top: 0.2vw;
-  padding-bottom: 2vw;
-  margin-top: 2vw;
-  margin-bottom: 4vw;
+  padding-inline: 4vh;
+  padding-top: 0.2vh;
+  padding-bottom: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
 }
 
 .latestUpdate {
-  font-size: 1.5vw;   
+  font-size: 1.5vh;   
 }
 
 .latestUpdate:hover {

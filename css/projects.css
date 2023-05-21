@@ -11,7 +11,7 @@ body ::selection {
   border-radius: 25px;
   cursor: pointer;
   height: 17vmin;
-  padding: 0.1vw;
+  padding: 0.1vh;
 }
 
 .card:hover {

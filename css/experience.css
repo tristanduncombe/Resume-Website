@@ -5,8 +5,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 100vmin;
-  padding-inline: 2vw;
-  padding-bottom: 2vw;
+  padding-inline: 2vh;
+  padding-bottom: 2vh;
 }
 
 .experience ::selection {
@@ -16,14 +16,14 @@
 
 .experience_header {
   margin-top: 4vh;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   text-align: center;
 }
 
 .experience_body {
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  font-size: 1vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 1vh;
 }
 
 .experience_degree {
@@ -36,21 +36,21 @@
 }
 
 .experience_main {
-  font-size: 1vw;
-  margin-top: 0.5vw;
+  font-size: 1vh;
+  margin-top: 0.5vh;
 }
 
 .experience_main #undergrad_swe {
-  font-size: 0.99vw;
-  margin-top: 0.5vw;
+  font-size: 0.99vh;
+  margin-top: 0.5vh;
 }
 
 .experience_secondary {
-  font-size: 0.9vw;
-  margin-top: 0.5vw;
+  font-size: 0.9vh;
+  margin-top: 0.5vh;
 }
 
 .experience_tertiary {
-  font-size: 0.8vw;
-  margin-top: 0.5vw;
+  font-size: 0.8vh;
+  margin-top: 0.5vh;
 }

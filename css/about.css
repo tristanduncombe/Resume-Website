@@ -2,8 +2,8 @@
 @import url(./generic.css);
 
 .about {
-  padding-inline: 2vw;
-  padding-bottom: 2vw;
+  padding-inline: 2vh;
+  padding-bottom: 2vh;
 }
 
 .about_header {
@@ -14,7 +14,7 @@
 }
 
 .about_paragraph {
-  font-size: 1vw;
+  font-size: 1vh;
   display: flex;
   width: 100vmin;
   margin-left: auto;
@@ -29,11 +29,11 @@
 }
 
 .about_achievements .achievement_main {
-  font-size: 1.1vw;
+  font-size: 1.1vh;
 }
 
 .about_achievements .achievement_year {
-  font-size: 0.9vw;
+  font-size: 0.9vh;
   font-size: 0.75;
 }
 
@@ -41,12 +41,12 @@
   width: 100vmin;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2vw;
+  margin-bottom: 2vh;
 }
 
 .about_header {
   margin-top: 4vh;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   text-align: center;
   font-weight: 200;
 }
@@ -54,8 +54,8 @@
 .details {
   display: flex;
   justify-content: space-between;
-  margin-top: 1vw;
-  font-size: 1vw;
+  margin-top: 1vh;
+  font-size: 1vh;
 }
 
 .bar {
@@ -69,8 +69,8 @@
 .bar div {
   position: relative;
   width: 0;
-  height: 0.5vw;
-  border-radius: 0.1vw;
+  height: 0.5vh;
+  border-radius: 0.1vh;
   background-color: var(--accent);
 }
 
