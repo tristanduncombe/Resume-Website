@@ -8,7 +8,7 @@ body ::selection {
 
 /*Set main body styling*/
 #body {
-  min-height: 90rem;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   background-color: var(--accent);
@@ -94,7 +94,6 @@ a:hover {
 
 #main_body {
   margin: 2rem auto;
-  width: 60rem;
   align-items: center;
 }
 

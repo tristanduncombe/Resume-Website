@@ -5,7 +5,7 @@
   float: right;
   color: var(--text-primary-color);
   padding-left: 20px;
-  font-size: medium;
+  font-size: 1.5vmin;
   text-shadow: #666;
   text-align: center;
   font-weight: bold;
@@ -19,7 +19,7 @@
   margin-left: -20px;
   text-shadow: #666;
   text-align: center;
-  font-size: 20px;
+  font-size: 2vmin;
   font-family: "Unbounded", cursive;
   font-weight: bold;
 }
@@ -27,8 +27,8 @@
 .divider {
   border-bottom: 1px solid var(--text-primary-color);
   height: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
 }
 
 .connect_message {
@@ -48,6 +48,7 @@
 }
 
 .connect_close {
+  margin-left: 1vh;
   font-size: 1.5vmin;
 }
 
@@ -66,4 +67,9 @@ header {
   text-align: center;
   font-size: 2rem;
   color: var(--text-primary-color);
+}
+
+#connect_message {
+  display: flex;
+  justify-content: center;
 }
