@@ -15,35 +15,16 @@
 ></script>
 
 <script>
+  //Check status of connect message
   if (localStorage.getItem("connect_message") == "false") {
     document.getElementById("connect_message").style.visibility = "hidden";
   }
 
-  function closePopup() {
-    // document.getElementById("connect_message")[0].style.visibility =
-    //   "hidden";
-
+  //Function to handle closing of connect message
+  function closeMessage() {
     document.getElementById("connect_message").style.visibility = "hidden";
     localStorage.setItem("connect_message", false);
   }
-
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
-      }
-    }
-  };
 </script>
 
 <html style="margin: 0">
@@ -65,6 +46,7 @@
         <a href="./about.html">ABOUT</a>
       </div>
     </div>
+
     <div class="divider"></div>
     <div id="connect_message">
       <div class="connect_message">
@@ -76,7 +58,7 @@
         >
         with you!
       </div>
-      <div class="connect_close" onclick="closePopup()">
+      <div class="connect_close" onclick="closeMessage()">
         <i class="fa-solid fa-xmark"></i>
       </div>
     </div>
