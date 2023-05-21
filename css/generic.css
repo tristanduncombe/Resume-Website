@@ -28,7 +28,6 @@ header {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
 }
 
 .column {
@@ -62,14 +61,6 @@ footer {
 footer ::selection {
   /* Change highlight background color to black */
   background: var(--accent);
-}
-
-* img {
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
 }
 
 html,
