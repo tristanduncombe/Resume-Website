@@ -21,3 +21,21 @@ body ::selection {
 .container {
   padding: 2px 16px;
 }
+
+.projects_main {
+  width: 100vmin; 
+  margin-left: auto;  
+  margin-right: auto; 
+  padding: 2rem;
+}
+
+.main_body {
+  font-size: 1rem;
+  padding-blocK: 2rem;
+}
+
+#projects {
+  padding-bottom: 55vmax; 
+  margin-top: 2vmin;
+  font-size: 1rem;
+}

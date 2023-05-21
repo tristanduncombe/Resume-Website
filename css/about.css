@@ -2,15 +2,11 @@
 @import url(./generic.css);
 
 .about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vmin;
   padding-inline: 2rem;
   padding-bottom: 2rem;
-}
-
-.about_header {
-  margin-top: 2.5%;
-  font-size: 35px;
-  text-align: center;
-  font-weight: bold;
 }
 
 .about_paragraph {
@@ -20,6 +16,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 999px) {
+  .about_paragraph {
+    display: block;
+  }
+}
+
 
 .about_achievements {
   display: flex;
@@ -42,13 +45,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-}
-
-.about_header {
-  margin-top: 4rem;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 200;
 }
 
 .details {
