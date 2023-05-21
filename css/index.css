@@ -1,33 +1,23 @@
+/*Import Generic CSS used throughout website*/
 @import "./generic.css";
-
-* img {
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 
 body ::selection {
   /* Change highlight background color to black */
   background: var(--secondary);
 }
 
-/* Custom Scrollbar */
-/* Style the header */
-header {
+/*Set main body styling*/
+#body {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--accent);
-  padding: 1vmax;
-  text-align: center;
-  font-size: 1.5vmax;
+  padding: 4vw;
+  font-size: 1vmin;
   color: var(--text-primary-color);
+  margin: auto;
 }
+
 
 a {
   text-decoration: none;
@@ -40,54 +30,13 @@ a:hover {
   text-size-adjust: 20px;
 }
 
-.divider {
-  border-bottom: 1px solid var(--text-primary-color);
-  height: 20px;
-  margin-bottom: 20px;
-}
-
-.connect_message {
-  color: var(--text-primary-color);
-  font-size: 15px;
-  text-align: center;
-  margin-top: 2.5%;
-}
-
-.connect_message a {
-  color: var(--text-primary-color);
-}
-
-.connect_link:hover {
-  color: var(--text-primary-color);
-  text-decoration-line: underline;
-}
-
-.connect_close {
-  padding-left: 30%;
-  margin-top: -1.2%;
-  font-size: large;
-}
-
-.connect_close:hover {
-  cursor: pointer;
-  color: rgb(255, 148, 148);
-}
-
-.main_image img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  border: 5px solid var(--secondary);
-}
-
 .main_name {
   color: var(--text-primary-color);
   font-size: auto;
   font-family: "Unbounded", cursive;
   font-weight: 900;
   text-align: center;
-  font-size: 2.5vmax
+  font-size: 2.5vmax;
 }
 
 .contact i {
@@ -132,171 +81,8 @@ a:hover {
   color: var(--text-secondary-color);
 }
 
-.about {
-  margin: auto;
-  text-align: left;
-  font-size: 20px;
-  width: 58%;
-}
-
-.about_header {
-  margin-top: 2.5%;
-  font-size: 35px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.about_paragraph {
-  margin-top: 0.5%;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about_education {
-  margin-top: 0.5%;
-  font-size: 25px;
-  text-align: center;
-}
-
-.about_degree {
-  margin-top: 0.2%;
-  padding-block: 20px;
-}
-
-.about_courses {
-  display: inline-block;
-}
-
-.about_volunteering {
-  margin-top: 0.5%;
-  font-size: 25px;
-  text-align: center;
-}
-
-.about_skills {
-  margin-top: 0.5%;
-  color: var(--text-secondary-color);
-  font-size: 25px;
-  text-align: center;
-}
-
-.about_experience {
-  padding-inline: 32%;
-}
-
-.details {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.bar {
-  position: relative;
-
-  border: 2px solid var(--accent);
-
-  border-radius: 20px;
-}
-.bar div {
-  position: relative;
-  width: 0;
-  height: 9px;
-  border-radius: 10px;
-  background-color: var(--accent);
-}
-
-.latestUpdate {
-  font-size: 1.5vw;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.latestUpdate:hover {
-  text-decoration: underline;
-  color: var(--accent);
-}
-
-.githubLink {
-  color: white;
-}
-
-#swe-skill-bar {
-  animation: swe-skill-bar 2s forwards;
-}
-@keyframes swe-skill-bar {
-  100% {
-    width: 75%;
-  }
-}
-#react-skill-bar {
-  animation: react-skill-bar 2s forwards;
-}
-@keyframes react-skill-bar {
-  100% {
-    width: 60%;
-  }
-}
-#js-bar {
-  animation: js-fill 2s forwards;
-}
-@keyframes js-fill {
-  100% {
-    width: 72%;
-  }
-}
-#c-bar {
-  animation: c-fill 2s forwards;
-}
-@keyframes c-fill {
-  100% {
-    width: 50%;
-  }
-}
-
-footer {
-  background-color: var(--secondary);
-  padding: 10px;
-  text-align: center;
-  color: var(--text-primary-color);
-}
-
-footer ::selection {
-  /* Change highlight background color to black */
-  background: var(--accent);
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.row {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-#body {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--accent);
-  padding: 4vw;
-  font-size: 1vmin;
-  color: var(--text-primary-color);
-  margin: auto;
-}
-
 #main_hi {
-  font-size: 1.5vmax
+  font-size: 1.5vmax;
 }
 
 #main_job {
@@ -312,15 +98,23 @@ footer ::selection {
   align-items: center;
 }
 
-@media (max-width: 700px) {
-  #main_body {
-    width: 90vw;
-    align-items: center;
-  }
+#main_update {
+  background-color: white;
+  border-radius: 25px;
+  padding-inline: 4vw;
+  padding-top: 0.2vw;
+  padding-bottom: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
 }
 
-footer {
-  margin-top: auto;
+.latestUpdate {
+  font-size: 1.5vw;   
+}
+
+.latestUpdate:hover {
+  text-decoration: underline;
+  color: var(--accent);
 }
 
 .main_contact {
