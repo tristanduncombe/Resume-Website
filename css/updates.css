@@ -1,6 +1,5 @@
 @import url(generic.css);
 
-
 .column {
   float: left;
   width: 50%;
@@ -22,6 +21,7 @@
 
 body ::selection {
   background-color: var(--accent);
+  color: white;
 }
 
 .container {
@@ -41,13 +41,25 @@ body ::selection {
 }
 
 .updates_main {
-  width: 100vmin; 
-  margin-left: auto;  
-  margin-right: auto; 
+  width: 100vmin;
+  min-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem;
 }
 
 .main_body {
   padding-block: 2rem;
   font-size: 1rem;
+}
+
+.card_filter {
+  border-radius: 20px;
+  border: 2px solid var(--accent);
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.card_filter:focus {
+  outline: none;
 }

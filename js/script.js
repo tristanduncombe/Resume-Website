@@ -66,8 +66,10 @@ function getRepoDetails(callback) {
                 </div>
             </div>`;
       });
+      //Send the response
       callback(html);
     })
+    //If error occured, console log it
     .catch((error) => console.log("Error: " + error));
 }
 
