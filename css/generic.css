@@ -67,7 +67,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  color: var(--text-secondary-color)
+  color: var(--text-secondary-color);
 }
 
 .heading {

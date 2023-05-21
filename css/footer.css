@@ -1,79 +1,79 @@
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
 
-  .footer-container ul {
-    list-style: none;
-    display: flex;
-  }
+.footer-container ul {
+  list-style: none;
+  display: flex;
+}
 
-  .footer-container a {
-    color: white;
-    text-decoration: none;
-  }
+.footer-container a {
+  color: white;
+  text-decoration: none;
+}
 
-  .row {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 60vmin;
-  }
+.row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 60vmin;
+}
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  .column {
-    width: 50%;
-    padding-left: 10px;
-  }
+.column {
+  width: 50%;
+  padding-left: 10px;
+}
 
-  .spotify-container {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-  }
+.spotify-container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
 
-  .fa-spotify {
-    font-size: 4vmin;
-    margin-right: 10px;
-  }
+.fa-spotify {
+  font-size: 4vmin;
+  margin-right: 10px;
+}
 
-  .spotify-link {
-    font-weight: 100;
-    font-size: 1.5vmin;
-  }
+.spotify-link {
+  font-weight: 100;
+  font-size: 1.5vmin;
+}
 
-  .spotify-link a:hover {
-    color: rgb(160, 124, 160);
-  }
+.spotify-link a:hover {
+  color: rgb(160, 124, 160);
+}
 
-  .text {
-    text-align: left;
-  }
+.text {
+  text-align: left;
+}
 
-  .text div {
-    margin: 0;
-    font-size: 1.5vmin;
-  }
+.text div {
+  margin: 0;
+  font-size: 1.5vmin;
+}
 
-  .links {
-    white-space: nowrap;
-  }
+.links {
+  white-space: nowrap;
+}
 
-  .links a {
-    font-size: 2vmin;
-  }
+.links a {
+  font-size: 2vmin;
+}
 
-  .links a:hover {
-    color: rgb(160, 124, 160);
-  }
+.links a:hover {
+  color: rgb(160, 124, 160);
+}
