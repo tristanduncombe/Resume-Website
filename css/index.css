@@ -106,10 +106,6 @@ a:hover {
   margin-bottom: 4rem;
 }
 
-.latestUpdate {
-  font-size: 1.5rem;
-}
-
 .latestUpdate:hover {
   text-decoration: underline;
   color: var(--accent);
@@ -128,12 +124,12 @@ a:hover {
 
 .update {
   font-weight: 400;
-  font-size: 1.25vmax;
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
 .latest_update {
-  font-size: 1.25vmax;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 
