@@ -3,12 +3,12 @@
 <link rel="stylesheet" href="./css/footer.css" />
 <script src="./js/script.js"></script>
 <script>
-  var outputElement = document.getElementById("song");
-  var linkElement = document.createElement("a");
-  linkElement.href = randomSong.link;
-  linkElement.className = "spotify-link";
-  linkElement.textContent = randomSong.name;
-  outputElement.appendChild(linkElement);
+    var outputElement = document.getElementById("song");
+    var linkElement = document.createElement("a");
+    linkElement.href = randomSong.link;
+    linkElement.className = "spotify-link";
+    linkElement.textContent = randomSong.name;
+    outputElement.appendChild(linkElement);
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
@@ -16,36 +16,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
-  rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
 />
 
 <footer>
-  <div class="footer-container">
-    <div class="row">
-      <div class="column">
-        <div class="spotify-container">
-          <i class="fa-brands fa-spotify"></i>
-          <!--Data will append into the div-->
-          <div class="text" id="song">
-            <div id="on_repeat">On Repeat</div>
-          </div>
+    <div class="footer-container">
+        <div class="row">
+            <div class="column">
+                <div class="spotify-container">
+                    <i class="fa-brands fa-spotify"></i>
+                    <!--Data will append into the div-->
+                    <div class="text" id="song">
+                        <div id="on_repeat">On Repeat</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="font-size: 1.5vmin">
+                <div class="links">©2023 Tristan Duncombe</div>
+                <div class="links">
+                    <a
+                        href="https://github.com/TristanDuncombe"
+                        class="githubLink"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/tristan-duncombe-306263213/"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column" style="font-size: 1.5vmin">
-        <div class="links">©2023 Tristan Duncombe</div>
-        <div class="links">
-          <a href="https://github.com/TristanDuncombe" class="githubLink">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/tristan-duncombe-306263213/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:tduncombe747@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
 </footer>

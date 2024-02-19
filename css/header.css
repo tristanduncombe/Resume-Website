@@ -1,75 +1,75 @@
 /* Colour Pallette*/
 .topnav a {
-  overflow: hidden;
-  text-decoration: none;
-  float: right;
-  color: var(--text-primary-color);
-  padding-left: 20px;
-  font-size: 1.5vmin;
-  text-shadow: #666;
-  text-align: center;
-  font-weight: bold;
+    overflow: hidden;
+    text-decoration: none;
+    float: right;
+    color: var(--text-primary-color);
+    padding-left: 20px;
+    font-size: 1.5vmin;
+    text-shadow: #666;
+    text-align: center;
+    font-weight: bold;
 }
 
 .topnav .header_name {
-  overflow: hidden;
-  text-decoration: none;
-  float: left;
-  color: var(--text-primary-color);
-  margin-left: -20px;
-  text-shadow: #666;
-  text-align: center;
-  font-size: 2vmin;
-  font-family: "Unbounded", cursive;
-  font-weight: bold;
+    overflow: hidden;
+    text-decoration: none;
+    float: left;
+    color: var(--text-primary-color);
+    margin-left: -20px;
+    text-shadow: #666;
+    text-align: center;
+    font-size: 2vmin;
+    font-family: "Unbounded", cursive;
+    font-weight: bold;
 }
 
 .divider {
-  border-bottom: 1px solid var(--text-primary-color);
-  height: 20px;
-  margin-bottom: 1vw;
-  margin-top: 1vw;
+    border-bottom: 1px solid var(--text-primary-color);
+    height: 20px;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
 }
 
 .connect_message {
-  color: var(--text-primary-color);
-  font-size: 1.5vmin;
+    color: var(--text-primary-color);
+    font-size: 1.5vmin;
 }
 
 .connect_message a {
-  color: var(--text-primary-color);
-  margin-block: 0;
-  padding-block: 0;
+    color: var(--text-primary-color);
+    margin-block: 0;
+    padding-block: 0;
 }
 
 .connect_link:hover {
-  color: var(--text-primary-color);
-  text-decoration-line: underline;
+    color: var(--text-primary-color);
+    text-decoration-line: underline;
 }
 
 .connect_close {
-  margin-left: 1vh;
-  font-size: 1.5vmin;
+    margin-left: 1vh;
+    font-size: 1.5vmin;
 }
 
 .connect_close:hover {
-  cursor: pointer;
-  color: rgb(255, 148, 148);
+    cursor: pointer;
+    color: rgb(255, 148, 148);
 }
 
 .navbar_dropdown {
-  visibility: visible;
+    visibility: visible;
 }
 
 header {
-  font-family: "Quicksand", sans-serif;
-  background-color: var(--accent);
-  text-align: center;
-  font-size: 2rem;
-  color: var(--text-primary-color);
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--accent);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-primary-color);
 }
 
 #connect_message {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }

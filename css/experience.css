@@ -2,49 +2,49 @@
 @import url(./generic.css);
 
 .experience {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100vmin;
-  padding-inline: 2rem;
-  padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vmin;
+    padding-inline: 2rem;
+    padding-bottom: 2rem;
 }
 
 .experience ::selection {
-  background-color: var(--accent);
-  color: white;
+    background-color: var(--accent);
+    color: white;
 }
 
 .experience_body {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .experience_degree {
-  margin-top: 0.2;
-  padding-block: 20px;
+    margin-top: 0.2;
+    padding-block: 20px;
 }
 
 .experience_degree img {
-  width: 15%;
+    width: 15%;
 }
 
 .experience_main {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 .experience_main #undergrad_swe {
-  font-size: 0.99rem;
-  margin-top: 0.5rem;
+    font-size: 0.99rem;
+    margin-top: 0.5rem;
 }
 
 .experience_secondary {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
 .experience_tertiary {
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }

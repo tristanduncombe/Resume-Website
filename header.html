@@ -5,62 +5,61 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
-  rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
 />
 
 <script
-  src="https://kit.fontawesome.com/e58a4047d3.js"
-  crossorigin="anonymous"
+    src="https://kit.fontawesome.com/e58a4047d3.js"
+    crossorigin="anonymous"
 ></script>
 
 <script>
-  //Check status of connect message
-  if (localStorage.getItem("connect_message") == "false") {
-    document.getElementById("connect_message").style.visibility = "hidden";
-  }
+    //Check status of connect message
+    if (localStorage.getItem("connect_message") == "false") {
+        document.getElementById("connect_message").style.visibility = "hidden";
+    }
 
-  //Function to handle closing of connect message
-  function closeMessage() {
-    document.getElementById("connect_message").style.visibility = "hidden";
-    localStorage.setItem("connect_message", false);
-  }
+    //Function to handle closing of connect message
+    function closeMessage() {
+        document.getElementById("connect_message").style.visibility = "hidden";
+        localStorage.setItem("connect_message", false);
+    }
 </script>
 
 <html style="margin: 0">
-  <head>
-    <title>Index - Tristan Duncombe</title>
-    <script
-      src="https://kit.fontawesome.com/ea05245640.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="" type="image/x-icon" />
-  </head>
-  <header>
-    <div class="topnav">
-      <a class="header_name" href="./index.html">Tristan Duncombe</a>
-      <div class="navbar">
-        <a href="./updates.html">UPDATES</a>
-        <a href="./projects.html">PROJECTS</a>
-        <a href="./experience.html">EXPERIENCE</a>
-        <a href="./about.html">ABOUT</a>
-      </div>
-    </div>
+    <head>
+        <title>Index - Tristan Duncombe</title>
+        <script
+            src="https://kit.fontawesome.com/ea05245640.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="icon" href="" type="image/x-icon" />
+    </head>
+    <header>
+        <div class="topnav">
+            <a class="header_name" href="./index.html">Tristan Duncombe</a>
+            <div class="navbar">
+                <a href="./projects.html">PROJECTS</a>
+                <a href="./experience.html">EXPERIENCE</a>
+                <a href="./about.html">ABOUT</a>
+            </div>
+        </div>
 
-    <div class="divider"></div>
-    <div id="connect_message">
-      <div class="connect_message">
-        Hi there, thanks for vising my website! I'd love to
-        <a
-          href="https://www.linkedin.com/in/tristan-duncombe-306263213/"
-          class="connect_link"
-          >connect</a
-        >
-        with you!
-      </div>
-      <div class="connect_close" onclick="closeMessage()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-    </div>
-  </header>
+        <div class="divider"></div>
+        <div id="connect_message">
+            <div class="connect_message">
+                Hi there, thanks for vising my website! I'd love to
+                <a
+                    href="https://www.linkedin.com/in/tristan-duncombe-306263213/"
+                    class="connect_link"
+                    >connect</a
+                >
+                with you!
+            </div>
+            <div class="connect_close" onclick="closeMessage()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </header>
 </html>
