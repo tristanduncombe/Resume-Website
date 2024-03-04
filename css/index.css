@@ -106,11 +106,6 @@ a:hover {
     margin-bottom: 4rem;
 }
 
-.latestUpdate:hover {
-    text-decoration: underline;
-    color: var(--accent);
-}
-
 .main_contact {
     font-size: 1.25vmax;
     text-align: center;
@@ -126,6 +121,10 @@ a:hover {
     font-weight: 400;
     font-size: 1rem;
     margin-top: 1rem;
+}
+
+.update ::selection {
+    background: var(--accent);
 }
 
 .latest_update {
