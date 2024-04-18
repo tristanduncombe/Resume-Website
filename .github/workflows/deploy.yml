@@ -25,6 +25,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: 'https://dev.tristanduncombe.com'
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
