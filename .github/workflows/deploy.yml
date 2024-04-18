@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
         with:
-          node-version: '14'
+          node-version: '18.17.0'
 
       - name: Install Dependencies
         run: |
@@ -22,9 +22,6 @@ jobs:
           rm package-lock.json
           npm install
           npm ci
-
-      - name: Install Dependencies
-        run: npm ci
 
       - name: Build
         run: npm run build
