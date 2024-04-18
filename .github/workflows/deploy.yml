@@ -23,13 +23,15 @@ jobs:
           npm install
           npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Build and Export
+        run: |
+          npm run build
+          npm run export
         env:
           NEXT_PUBLIC_SITE_URL: 'https://dev.tristanduncombe.com'
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@4.1.9
         with:
           branch: gh-pages-dev
           folder: out
