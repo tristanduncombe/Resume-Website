@@ -2,22 +2,21 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
-      - dev
+      - next-js
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2.3.4
 
-      - name: Setup Node.js environment 🌍
+      - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
         with:
           node-version: '14'
 
-      - name: Cache dependencies ⏲️
+      - name: Cache dependencies
         uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
@@ -34,5 +33,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: ${{ github.ref == 'refs/heads/main' && 'gh-pages' || 'gh-pages-dev' }}
+          branch: gh-pages-dev
           folder: out
