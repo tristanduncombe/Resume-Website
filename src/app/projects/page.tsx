@@ -3,47 +3,40 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoArch from '@/images/logos/open-shuttle.svg'
+import logoUniBasement from '@/images/logos/planetaria.svg'
+import logoFameFaked from '@/images/logos/famefaked.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Fame Faked',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'A game about detecting whether a Celebrity Video is Deepfaked or not. Learn about the tools that are used to avoid the deception of the masses.',
+    link: {
+      href: 'https://deco3801-htmlheroes.uqcloud.net/',
+      label: 'Fame Faked',
+    },
+    logo: logoFameFaked,
   },
   {
-    name: 'Animaginary',
+    name: 'A.R.C.H',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'A.R.C.H. is a mobile application that allows users to find the nearest ARCH recycling bin, report full or missing bins, and earn recycling rewards. Winner of the 2024 EAIT Hackathon.',
+    link: {
+      href: 'https://github.com/tristanduncombe/arch',
+      label: 'github.com',
+    },
+    logo: logoArch,
   },
   {
-    name: 'HelioStream',
+    name: 'UniBasement',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'UniBasement is a platform to encourage students to collaborate on University Final Exams. UniBasement enables students to simplify their final exam preparations.',
+    link: {
+      href: 'https://github.com/tristanduncombe/UniBasement',
+      label: 'github.com',
+    },
+    logo: logoUniBasement,
   },
 ]
 
@@ -60,14 +53,15 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description:
+    "I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. These range from small webtools to task I've worked on over months of time. If you think you can improve them consider contributing!",
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="My small projects that make me proud!"
+      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. These range from small webtools to task I've worked on over months of time. If you think you can improve them consider contributing!"
     >
       <ul
         role="list"
