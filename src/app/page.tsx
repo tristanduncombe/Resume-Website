@@ -9,10 +9,9 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '@/components/SocialIcons'
 import logoBoeing from '@/images/logos/boeing.svg'
-import logoNibbles from '@/images/logos/boeing.svg'
+import logoNibbles from '@/images/logos/Nibbles&Bytes.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
