@@ -84,17 +84,14 @@ export default function About() {
               I’ve been tinkering and working with computers since I was
               incredibly young.
             </p>
+            <p>
+              As I've developed as a software engineer, my primary focus has been on full-stack web-development with a particularly keen passion of emphasising good User Experience and User Interface practice.
+              My goal for my career is to have a positive impact on the world, no matter how large or small it may be, but I would love to write avionics software at some point in my career. 
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink
-              href="https://www.instagram.com/tristan.duncombe/"
-              icon={InstagramIcon}
-              className="mt-4"
-            >
-              Follow on Instagram
-            </SocialLink>
             <SocialLink
               href="https://www.github.com/tristanduncombe"
               icon={GitHubIcon}

@@ -11,7 +11,7 @@ const projects = [
   {
     name: 'Fame Faked',
     description:
-      'A game about detecting whether a Celebrity Video is Deepfaked or not. Learn about the tools that are used to avoid the deception of the masses.',
+      'A game about detecting whether a Celebrity Video is Deepfaked or not. Learn about the tools that are used to avoid the deception of the masses. Fame Faked placed 2nd at the UQ EECS Innovation Showcase',
     link: {
       href: 'https://deco3801-htmlheroes.uqcloud.net/',
       label: 'Fame Faked',
@@ -54,14 +54,14 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    "I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. These range from small webtools to task I've worked on over months of time. If you think you can improve them consider contributing!",
+    "Across the years I have worked on a number of projects, here are a couple that I'm most proud of!",
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="My small projects that make me proud!"
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. These range from small webtools to task I've worked on over months of time. If you think you can improve them consider contributing!"
+      title="My projects!"
+      intro="Across the years I have worked on a number of projects, here are a couple that I'm most proud of!"
     >
       <ul
         role="list"
