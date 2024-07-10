@@ -1,4 +1,9 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import { Tweet } from 'react-tweet'
+
+import Script from 'next/script';
+
+<Script src="https://platform.twitter.com/widgets.js" />
 
 export const article = {
   author: 'Tristan Duncombe',
@@ -18,9 +23,10 @@ export default (props) => <ArticleLayout article={article} {...props} />
 Within Aviation, the first priority is always safety; yet, when we look at airports across the United States of America we can see a worrying trend; a substancial increase in runway incursions.
 A runway incursion is when an aircraft enters a runway when it is already occupied, or will be occupied.
 One such example is (JFK INCIDENT WHERE THREE AIRCRAFT ENTERED THE RUNWAY)
-```rust
-put image of jfk incident here
-```
+
+<div className="flex justify-center items-center">
+  <Tweet id="1752044571360366642" />
+</div>
 
 I derive a large amount of my self-worth from whether or not Hacker News is impressed with the work I'm doing, so when I realized this, I cancelled all of our existing projects and started migrating everything to Rust immediately.
 
