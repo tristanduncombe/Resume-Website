@@ -37,7 +37,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 export const metadata: Metadata = {
   title: 'Articles',
   description:
-    'My long-form thoughts on software engineering, leadership, aerospace, and the defence industry.',
+    'Things I think are important to share.',
 }
 
 export default async function ArticlesIndex() {
@@ -45,8 +45,8 @@ export default async function ArticlesIndex() {
 
   return (
     <SimpleLayout
-      title="Writing on software design, defence, and the aerospace industry."
-      intro="My long-form thoughts on software engineering, leadership, aerospace, and the defence industry."
+      title="Things I think are important to share."
+      intro="Small snippets of information I want you to know about!"
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">
