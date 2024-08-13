@@ -3,8 +3,7 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-// import logoArch from '@/images/logos/open-shuttle.svg'
-import logoUniBasement from '@/images/logos/UniBasement.png'
+import logoUniBasement from '@/images/logos/UniBasement.svg'
 import logoFameFaked from '@/images/logos/famefaked.png'
 
 const projects = [
