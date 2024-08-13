@@ -1,8 +1,7 @@
 name: Build and Deploy
 on:
   push:
-    branches:
-      - next-js
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -27,7 +26,7 @@ jobs:
         run: |
           npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: 'https://dev.tristanduncombe.com'
+          NEXT_PUBLIC_SITE_URL: 'https://tristanduncombe.com'
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.9
