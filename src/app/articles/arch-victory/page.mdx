@@ -1,5 +1,4 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
-import { Tweet } from 'react-tweet'
 import hackathonImage from "@/images/photos/image-2.jpg"
 
 import Script from 'next/script';
@@ -19,12 +18,12 @@ export const metadata = {
   description: article.description,
 }
 
-export default (props) => <ArticleLayout article={article} {...props} />
+export const dynamic = 'force-dynamic';
 
+export default (props) => <ArticleLayout article={article} {...props} />
 
 <Image src={hackathonImage} width={800} height={800}/>
 *The Winners of the UQ EAIT Hackathon, the Evan Hughes Fan Club*
-
 
 Over the course of the 3rd of April 2024, the members of the Evan Hughes premier fan club can together to develop the world's hottest new innovation:
 
@@ -40,4 +39,3 @@ Checkout the repo [here](https://github.com/tristanduncombe/arch/)
 <div className="flex justify-center items-center">
   <Tweet id="1752044571360366642" />
 </div> */}
-
