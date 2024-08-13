@@ -85,7 +85,7 @@ export default function About() {
               incredibly young.
             </p>
             <p>
-              As I've developed as a software engineer, my primary focus has been on full-stack web-development with a particularly keen passion of emphasising good User Experience and User Interface practice.
+              As I’ve developed as a software engineer, my primary focus has been on full-stack web-development with a particularly keen passion of emphasising good User Experience and User Interface practice.
               My goal for my career is to have a positive impact on the world, no matter how large or small it may be, but I would love to write avionics software at some point in my career. 
             </p>
           </div>
