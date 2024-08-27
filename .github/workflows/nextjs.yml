@@ -1,38 +1,36 @@
-name: Build and Deploy
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages deploy
+
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.0
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4.1.3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
         with:
-          node-version: '18.17.0'
+          node-version: "18.x"
 
-      - name: Install Dependencies
-        run: |
-          rm -rf node_modules
-          rm package-lock.json
-          npm install
-          npm ci
+      - name: Installing my packages
+        run: npm ci
 
-      - name: Build and Export
-        run: |
-          npm run build
-        env:
-          NEXT_PUBLIC_SITE_URL: 'tristanduncombe.com'
+      - name: Extract repository name
+        run: echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.9
+      - name: Build my App
+        run: npm run build && touch ./out/.nojekyll
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.6.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          folder: out
+          branch: main # The branch the action should deploy to.
+          folder: out # The folder the action should deploy to.
