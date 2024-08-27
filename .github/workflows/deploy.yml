@@ -28,11 +28,8 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: 'tristanduncombe.com'
 
-      # - name: Deploy
-      #   uses: JamesIves/github-pages-deploy-action@4.1.9
-      #   with:
-      #     branch: next-js
-      #     folder: out
-      - name: Run
-        run:
-          node .next/standalone/server.js
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.9
+        with:
+          branch: next-js
+          folder: out
