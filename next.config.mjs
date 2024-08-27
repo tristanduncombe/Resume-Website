@@ -7,8 +7,10 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   output: 'export',
   images: {
-    unoptimized: true,
+    loader: "akamai",
+    path: "./src/images",
   },
+  assetPrefix: "./",
 }
 
 const withMDX = nextMDX({
