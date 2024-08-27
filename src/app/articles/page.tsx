@@ -2,14 +2,15 @@ import { type Metadata } from 'next'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
+import { type Article, articles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import arch from "./arch-victory/page.mdx"
 
-function Article({ article }: { article: ArticleWithSlug }) {
+function Article({ article, route }: { article: Article, route: string }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`/articles/${article.slug}`}>
+        <Card.Title href={`/articles/${route}`}>
           {article.title}
         </Card.Title>
         <Card.Eyebrow
@@ -41,8 +42,6 @@ export const metadata: Metadata = {
 }
 
 export default async function ArticlesIndex() {
-  let articles = await getAllArticles()
-
   return (
     <SimpleLayout
       title="Things I think are important to share."
@@ -50,8 +49,8 @@ export default async function ArticlesIndex() {
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">
-          {articles.map((article) => (
-            <Article key={article.slug} article={article} />
+          {articles.map((article, index) => (
+            <Article key={index} article={article.article} route={article.route} />
           ))}
         </div>
       </div>

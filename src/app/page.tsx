@@ -12,14 +12,14 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
+import { Article as ArticleType, articles as allArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import Resume from './resume'
 
-function Article({ article }: { article: ArticleWithSlug }) {
+function Article({ article, route }: { article: ArticleType, route: string }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
+      <Card.Title href={`/articles/${route}`}>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -72,7 +72,7 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
+  let articles = (allArticles).slice(0, 4)
 
   return (
     <>
@@ -106,7 +106,7 @@ export default async function Home() {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+              <Article key={article.route} article={article.article} route={article.route} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">

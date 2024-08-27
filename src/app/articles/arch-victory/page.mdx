@@ -1,10 +1,6 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import hackathonImage from "@/images/photos/image-2.jpg"
 
-import Script from 'next/script';
-
-<Script src="https://platform.twitter.com/widgets.js" />
-
 export const article = {
   author: 'Tristan Duncombe',
   date: '2024-04-03',
@@ -17,8 +13,6 @@ export const metadata = {
   title: article.title,
   description: article.description,
 }
-
-export const dynamic = 'force-dynamic';
 
 export default (props) => <ArticleLayout article={article} {...props} />
 

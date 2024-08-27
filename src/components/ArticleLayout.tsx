@@ -1,13 +1,8 @@
-'use client'
-
-import { useContext } from 'react'
-import { useRouter } from 'next/navigation'
-
-import { AppContext } from '@/app/providers'
+import React from 'react';
 import { Container } from '@/components/Container'
-import { Prose } from '@/components/Prose'
-import { type ArticleWithSlug } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
+import { Prose } from './Prose';
+import { formatDate } from '@/lib/formatDate';
+import { Article } from '@/lib/articles';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -22,32 +17,25 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function ArticleLayout({
-  article,
-  children,
-}: {
-  article: ArticleWithSlug
-  children: React.ReactNode
-}) {
-  let router = useRouter()
-  let { previousPathname } = useContext(AppContext)
+interface Props {
+  article: Article;
+  children: React.ReactNode;
+}
 
+export function ArticleLayout({ article, children }: Props) {
   return (
     <Container className="mt-16 lg:mt-32">
       <div className="xl:relative">
         <div className="mx-auto max-w-2xl">
-          {previousPathname && (
-            <button
-              type="button"
-              onClick={() => router.back()}
-              aria-label="Go back to articles"
-              className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20"
-            >
-              <ArrowLeftIcon className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
-            </button>
-          )}
+          <a
+            href="/articles"
+            aria-label="Go back to articles"
+            className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20"
+          >
+            <ArrowLeftIcon className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
+          </a>
           <article>
-            <header className="flex flex-col">
+          <header className="flex flex-col">
               <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
                 {article.title}
               </h1>
@@ -66,5 +54,5 @@ export function ArticleLayout({
         </div>
       </div>
     </Container>
-  )
+  );
 }
