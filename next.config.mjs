@@ -5,12 +5,9 @@ import remarkGfm from 'remark-gfm'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  output: 'export',
   images: {
-    loader: "akamai",
-    path: "./src/images",
+    unoptimized: true,
   },
-  assetPrefix: "./",
 }
 
 const withMDX = nextMDX({
