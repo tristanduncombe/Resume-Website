@@ -1,0 +1,35 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import hackathonImage from "@/images/photos/image-2.jpg"
+
+export const article = {
+  author: 'Tristan Duncombe',
+  date: '2024-04-03',
+  title: 'Celebrating Victory at the 2024 EAIT Hackathon',
+  description:
+    'Our 8 hour Journey to Victory.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+<Image src={hackathonImage} width={800} height={800}/>
+*The Winners of the UQ EAIT Hackathon, the Evan Hughes Fan Club*
+
+Over the course of the 3rd of April 2024, the members of the Evan Hughes premier fan club can together to develop the world's hottest new innovation:
+
+***A smart recycling bin.***
+
+*"Shocking. Revolutionary. Impressive."* - The Judges (probably)
+
+Throughout the day we argued, designed, and coded an initial prototype for our smart bin and mobile phone app, although we focused on arguing as our primary task.
+I've always enjoyed hackathons with friends, and this hackathon was enjoyable albeit it incredibly short!
+
+Checkout the repo [here](https://github.com/tristanduncombe/arch/)
+{/* 
+<div className="flex justify-center items-center">
+  <Tweet id="1752044571360366642" />
+</div> */}
