@@ -1,4 +1,3 @@
-```markdown
 # Next.js Resume Website
 
 This is a personal resume website built using Next.js and styled with Tailwind CSS, including components from Tailwind UI.
@@ -79,4 +78,3 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Contact
 
 For any inquiries, please contact [tristan@nibblesnbytes.com.au](mailto:tristan@nibblesnbytes.com.au).
-```
