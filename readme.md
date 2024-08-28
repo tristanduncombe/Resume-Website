@@ -64,7 +64,7 @@ The exported static site will be in the `out` directory.
 
 ## Customization
 
-You can customize the website by editing the components in the `src` directory and the styles in the `styles` directory.
+You can customize the website by editing the components in the `src` directory.
 
 ## License
 
