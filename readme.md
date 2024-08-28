@@ -67,7 +67,7 @@ You can customize the website by editing the components in the `src` directory.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is open for contribution but the source code itself uses a commercial template and is therefore not licensed under any open-source license. Forking this project as a base for your own projects is not permitted under the license of the original template.
 
 ## Acknowledgements
 
