@@ -12,7 +12,7 @@ const projects = [
     description:
       'A game about detecting whether a Celebrity Video is Deepfaked or not. Learn about the tools that are used to avoid the deception of the masses. Fame Faked placed 2nd at the UQ EECS Innovation Showcase',
     link: {
-      href: 'https://deco3801-htmlheroes.uqcloud.net/',
+      href: 'https://github.com/tristanduncombe/famefaked',
       label: 'Fame Faked',
     },
     logo: logoFameFaked,
