@@ -107,11 +107,11 @@ export default function About() {
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:tristan@nibblesnbytes.com.au"
+              href="mailto:tristan@tristanduncombe.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              tristan@nibblesnbytes.com.au
+              tristan@tristanduncombe.com
             </SocialLink>
           </ul>
         </div>

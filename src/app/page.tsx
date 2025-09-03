@@ -84,7 +84,7 @@ export default async function Home() {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Tristan, a software engineer and pilot based in Brisbane. I’m
             passionate about all things software and aviation. I’m also a
-            software engineering consultant for Nibbles & Bytes Engineering, my
+            software engineering consultant for Scorsa, my
             sole trader consultation company.
           </p>
           <div className="mt-6 flex gap-6">

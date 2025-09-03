@@ -77,4 +77,4 @@ This project is open for contribution but the source code itself uses a commerci
 
 ## Contact
 
-For any inquiries, please contact [tristan@nibblesnbytes.com.au](mailto:tristan@nibblesnbytes.com.au).
+For any inquiries, please contact [tristan@tristanduncombe.com](mailto:tristan@tristanduncombe.com).

@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import logoBoeing from '@/images/logos/boeing.svg'
-import logoNibbles from '@/images/logos/Nibbles&Bytes.png'
+import logoScorsa from '@/images/logos/scorsa.png'
 import { IconBriefcase, IconMail } from "@tabler/icons-react";
 
 interface Role {
@@ -28,7 +28,11 @@ function Role({ role }: { role: Role }) {
     return (
         <li className="flex gap-4">
         <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
-            <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+            {role.company === 'Scorsa' ? (
+              <Image src={role.logo} alt="" className="h-10 w-10 object-cover rounded-full" unoptimized />
+            ) : (
+              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+            )}
         </div>
         <dl className="flex flex-auto flex-wrap gap-x-2">
             <dt className="sr-only">Company</dt>
@@ -56,9 +60,9 @@ function Role({ role }: { role: Role }) {
 export default function Resume() {
     let resume: Array<Role> = [
       {
-        company: 'Nibbles & Bytes Engineering',
+        company: 'Scorsa',
         title: 'Software Engineering Consultant',
-        logo: logoNibbles,
+        logo: logoScorsa,
         start: '2024',
         end: {
           label: 'Present',
@@ -88,7 +92,7 @@ export default function Resume() {
             <Role key={roleIndex} role={role} />
           ))}
         </ol>
-        <Button variant="secondary" className="group mt-6 w-full" onClick={() => window.location.href = 'mailto:tristan@nibblesnbytes.com.au'}>
+        <Button variant="secondary" className="group mt-6 w-full" onClick={() => window.location.href = 'mailto:tristan@tristanduncombe.com'}>
           Reach out for my Resume!
           <IconMail className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
         </Button>
