@@ -28,7 +28,11 @@ function Role({ role }: { role: Role }) {
     return (
         <li className="flex gap-4">
         <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
-            {role.company === 'Scorsa' ? (
+            {role.company === 'Simple Parlay' ? (
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-500">
+                <span className="text-xs font-bold text-white">SP</span>
+              </div>
+            ) : role.company === 'Scorsa' ? (
               <Image src={role.logo} alt="" className="h-10 w-10 object-cover rounded-full" unoptimized />
             ) : (
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
@@ -74,6 +78,16 @@ export default function Resume() {
         title: 'Undergraduate Software Engineer',
         logo: logoBoeing,
         start: '2022',
+        end: {
+          label: '2025',
+          dateTime: new Date().getFullYear().toString(),
+        },
+      },
+      {
+        company: 'Simple Parlay',
+        title: 'Technical Lead',
+        logo: logoBoeing, // placeholder, not rendered
+        start: '2026',
         end: {
           label: 'Present',
           dateTime: new Date().getFullYear().toString(),
