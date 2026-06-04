@@ -6,12 +6,13 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import logoBoeing from '@/images/logos/boeing.svg'
 import logoScorsa from '@/images/logos/scorsa.png'
+import logoSimpleParlay from '@/images/logos/simple-parlay.png'
 import { IconBriefcase, IconMail } from "@tabler/icons-react";
 
 interface Role {
     company: string
     title: string
-    logo: ImageProps['src']
+    logo?: ImageProps['src']
     start: string | { label: string; dateTime: string }
     end: string | { label: string; dateTime: string }
   }
@@ -28,15 +29,11 @@ function Role({ role }: { role: Role }) {
     return (
         <li className="flex gap-4">
         <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
-            {role.company === 'Simple Parlay' ? (
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-500">
-                <span className="text-xs font-bold text-white">SP</span>
-              </div>
-            ) : role.company === 'Scorsa' ? (
+            {role.company === 'Scorsa' && role.logo ? (
               <Image src={role.logo} alt="" className="h-10 w-10 object-cover rounded-full" unoptimized />
-            ) : (
+            ) : role.logo ? (
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-            )}
+            ) : null}
         </div>
         <dl className="flex flex-auto flex-wrap gap-x-2">
             <dt className="sr-only">Company</dt>
@@ -86,7 +83,7 @@ export default function Resume() {
       {
         company: 'Simple Parlay',
         title: 'Technical Lead',
-        logo: logoBoeing, // placeholder, not rendered
+        logo: logoSimpleParlay,
         start: '2026',
         end: {
           label: 'Present',
