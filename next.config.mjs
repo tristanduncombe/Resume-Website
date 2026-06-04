@@ -1,6 +1,4 @@
-import rehypePrism from '@mapbox/rehype-prism';
 import nextMDX from '@next/mdx';
-import remarkGfm from 'remark-gfm';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -14,8 +12,9 @@ const nextConfig = {
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypePrism],
+    // Plugin names as strings so options are serializable for Turbopack builds.
+    remarkPlugins: ['remark-gfm'],
+    rehypePlugins: ['@mapbox/rehype-prism'],
   },
 });
 

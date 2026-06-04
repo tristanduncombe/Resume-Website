@@ -77,7 +77,7 @@ export default function Resume() {
         start: '2022',
         end: {
           label: '2025',
-          dateTime: new Date().getFullYear().toString(),
+          dateTime: new Date(2025, 12, 20).getFullYear().toString(),
         },
       },
       {
